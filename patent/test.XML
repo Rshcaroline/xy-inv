@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE business:PatentDocumentAndRelated SYSTEM "/DTDS/ExternalStandards/ipphdb-entities.dtd"[]>
+<business:PatentDocumentAndRelated xmlns:base="http://www.sipo.gov.cn/XMLSchema/base" xmlns:business="http://www.sipo.gov.cn/XMLSchema/business" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:tbl="http://oasis-open.org/specs/soextblx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sipo.gov.cn/XMLSchema/business /DTDS/PatentDocument/Elements/OtherElements.xsd" xsdVersion="V2.2.1" file="CN102015000436362CN00001065046750ABIAZH20170315CN00C.XML" dateProduced="20170314" status="C" lang="zh" country="CN" docNumber="106504675" kind="A" datePublication="20170315">
+  <business:BibliographicData>
+    <business:PublicationReference dataFormat="standard" sequence="1">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>106504675</base:DocNumber>
+        <base:Kind>A</base:Kind>
+        <base:Date>20170315</base:Date>
+      </base:DocumentID>
+    </business:PublicationReference>
+    <business:PublicationReference dataFormat="original" sourceDB="national office" sequence="1">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>106504675</base:DocNumber>
+        <base:Kind>A</base:Kind>
+        <base:Date>20170315</base:Date>
+      </base:DocumentID>
+    </business:PublicationReference>
+    <business:PublicAvailabilityDate>
+      <business:GazetteReference>
+        <business:GazetteNumber>33-11</business:GazetteNumber>
+        <base:Date>20170315</base:Date>
+      </business:GazetteReference>
+    </business:PublicAvailabilityDate>
+    <business:ApplicationReference applType="10" dataFormat="standard" sequence="1">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>102015000436362</base:DocNumber>
+        <base:Date>20150907</base:Date>
+      </base:DocumentID>
+    </business:ApplicationReference>
+    <business:ApplicationReference applType="10" dataFormat="original" sequence="1" sourceDB="national office">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>201510436362.X</base:DocNumber>
+        <base:Date>20150907</base:Date>
+      </base:DocumentID>
+    </business:ApplicationReference>
+    <business:ClassificationIPCRDetails creator="03" processingType="original">
+      <business:ClassificationIPCR sequence="1">
+        <business:IPCVersionDate>20060101</business:IPCVersionDate>
+        <business:Section>G</business:Section>
+        <business:MainClass>09</business:MainClass>
+        <business:Subclass>F</business:Subclass>
+        <business:MainGroup>15</business:MainGroup>
+        <business:Subgroup>02</business:Subgroup>
+        <business:GeneratingOffice>
+          <base:WIPOST3Code>CN</base:WIPOST3Code>
+        </business:GeneratingOffice>
+        <business:ClassificationDataSource>H</business:ClassificationDataSource>
+        <base:Text>G09F   15/02    (2006.01)</base:Text>
+      </business:ClassificationIPCR>
+      <business:ClassificationIPCR sequence="2">
+        <business:IPCVersionDate>20060101</business:IPCVersionDate>
+        <business:Section>G</business:Section>
+        <business:MainClass>09</business:MainClass>
+        <business:Subclass>F</business:Subclass>
+        <business:MainGroup>23</business:MainGroup>
+        <business:Subgroup>00</business:Subgroup>
+        <business:GeneratingOffice>
+          <base:WIPOST3Code>CN</base:WIPOST3Code>
+        </business:GeneratingOffice>
+        <business:ClassificationDataSource>H</business:ClassificationDataSource>
+        <base:Text>G09F   23/00    (2006.01)</base:Text>
+      </business:ClassificationIPCR>
+    </business:ClassificationIPCRDetails>
+    <business:InventionTitle lang="zh" dataFormat="original" sourceDB="national office" processingType="original" creator="03">一种可以放笔的桌面广告卡座</business:InventionTitle>
+    <business:Parties>
+      <business:ApplicantDetails representative="1">
+        <business:Applicant sequence="1" appType="applicant-inventor" dataFormat="original" sourceDB="national office" lang="zh" creator="03" processingType="original">
+          <base:AddressBook lang="zh">
+            <base:Name>王德贵</base:Name>
+            <base:Address>
+              <base:AddressLine>0</base:AddressLine>
+              <base:AddressMailCode>0</base:AddressMailCode>
+              <base:PostBox>0</base:PostBox>
+              <base:AddressRoom>0</base:AddressRoom>
+              <base:AddressFloor>0</base:AddressFloor>
+              <base:AddressBuilding>0</base:AddressBuilding>
+              <base:Street>0</base:Street>
+              <base:AddressCity>0</base:AddressCity>
+              <base:County>广陵区</base:County>
+              <base:City>扬州市</base:City>
+              <base:Province>江苏省</base:Province>
+              <base:PostCode>225106</base:PostCode>
+              <base:WIPOST3Code>CN</base:WIPOST3Code>
+              <base:Text>225106 江苏省扬州市广陵区李典镇工业集中区</base:Text>
+            </base:Address>
+          </base:AddressBook>
+          <business:OrganizationCode createDate="00000000" creator="00">0000000000</business:OrganizationCode>
+        </business:Applicant>
+      </business:ApplicantDetails>
+      <business:InventorDetails>
+        <business:Inventor sequence="1" dataFormat="original" sourceDB="national office" lang="zh" publicationMark="0" creator="03" processingType="original">
+          <base:AddressBook lang="zh">
+            <base:Name>王德贵</base:Name>
+          </base:AddressBook>
+        </business:Inventor>
+      </business:InventorDetails>
+      <business:AgentDetails>
+        <business:CustomerNumber>00000</business:CustomerNumber>
+        <business:Agent sequence="1" lang="zh" dataFormat="original" sourceDB="national office" repType="agent" processingType="original" creator="03">
+          <business:Agency>
+            <base:AddressBook lang="zh">
+              <base:OrganizationName>扬州苏中专利事务所(普通合伙) 32222</base:OrganizationName>
+            </base:AddressBook>
+          </business:Agency>
+          <base:AddressBook lang="zh">
+            <base:Name>孙忠明</base:Name>
+          </base:AddressBook>
+        </business:Agent>
+      </business:AgentDetails>
+    </business:Parties>
+  </business:BibliographicData>
+  <business:Abstract dataFormat="original" lang="zh" sourceDB="national office" processingType="original" creator="03">
+    <base:Paragraphs num="0001">本发明涉及一种可以放笔的桌面广告卡座，属于卡座技术领域，包括底座、支座，支座设置于底座上；其特征是：所述支座的两侧设有夹板，夹板的两侧与支座固定连接，夹板与支座之间形成开口朝上的卡槽，支座的侧面设有放笔的放笔筒，所述放笔筒为透明放笔桶。本发明结构合理简单、生产制造容易、使用方便，通过本发明，对现有桌面广告卡座进行了改进，主要包括底座、支座，支座设置于底座上；支座的两侧设置有夹板，夹板的两侧与支座固定连接，夹板与支座之间形成开口朝上的卡槽，支座的侧面设有放笔的放笔筒，放笔筒为透明放笔桶。使用时，可以实现将笔插入放置在放笔筒中供人们使用，给人们提供便利。</base:Paragraphs>
+    <business:AbstractFigure>
+      <base:Figure num="0001">
+        <base:Image he="464" wi="320" file="201510436362.TIF" imgContent="undefined" imgFormat="TIFF" />
+      </base:Figure>
+    </business:AbstractFigure>
+  </business:Abstract>
+</business:PatentDocumentAndRelated>
