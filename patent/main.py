@@ -27,8 +27,8 @@ def get_each_invent(f):
     post = root.getElementsByTagName('base:PostCode')[0].firstChild.data
     place = root.getElementsByTagName('business:ApplicantDetails')[0].getElementsByTagName('base:Text')[0].firstChild.data.replace(post, '').replace(' ', '')
     inventor = root.getElementsByTagName('base:Name')[1].firstChild.data
-    detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.data
-    agency = root.getElementsByTagName('base:OrganizationName')[0].firstChild.data
+    # agency = root.getElementsByTagName('base:OrganizationName')[0].firstChild.data
+    # detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.data
 
     print u'申请号：', shenqinghao
     print u'申请日：', shenqingri
@@ -38,11 +38,10 @@ def get_each_invent(f):
     print u'申请人：', name
     print u'发明人：', inventor
     print u'专利产品：',title
-    print u'代理人：', agency
+    # print u'代理人：', agency
     print u'申请人地址：', place
     print u'申请人邮编：', post
-    print u'介绍：',detail
-    return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, agency, place, post, detail]
+    return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, place, post]
 
 
 def write(r):
@@ -53,14 +52,22 @@ def write(r):
     return 0
 
 if __name__ == '__main__':
-    # result = get_each_invent('test.XML')
-    # write(result)
 
-    with open('index.txt') as f:
+    '''
+    result = get_each_invent('1/CN102015000436362CN00001065046750ABIAZH20170315CN00C/CN102015000436362CN00001065046750ABIAZH20170315CN00C.XML')
+    write(result)
+    '''
+
+    with open('11.txt') as f:
         cv = f.readlines()
         for line in cv:
+            line = line[1:]
             line = line.replace(u'\\', '/')
-            print line
-            time.sleep(3)
+            line = line.replace(u'\n', '')
+
+            result = get_each_invent(line)
+            write(result)
+
         f.close()
     print 'done'
+
