@@ -3,6 +3,7 @@
 import xml.dom.minidom
 import csv
 import sys
+import levenshtein as lv
 
 
 reload(sys)
@@ -51,6 +52,7 @@ def write(r):
     outfile.close()
     return 0
 
+
 if __name__ == '__main__':
 
     '''
@@ -70,4 +72,3 @@ if __name__ == '__main__':
 
         f.close()
     print 'done'
-
