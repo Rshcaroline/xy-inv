@@ -3,7 +3,7 @@
 import xml.dom.minidom
 import csv
 import sys
-import time
+
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
@@ -45,7 +45,7 @@ def get_each_invent(f):
 
 
 def write(r):
-    outfile = open('CN-BIBS-ABSS-10-A_20170419.csv', 'ab')
+    outfile = open('CN-BIBS-ABSS-10-A_20170510.csv', 'ab')
     writer = csv.writer(outfile)
     writer.writerow(r)
     outfile.close()
@@ -58,7 +58,7 @@ if __name__ == '__main__':
     write(result)
     '''
 
-    with open('1.txt') as f:
+    with open('test.txt') as f:
         cv = f.readlines()
         for line in cv:
             line = line[1:]
