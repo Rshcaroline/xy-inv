@@ -46,7 +46,7 @@ def get_each_invent(f):
 
 
 def write(r):
-    outfile = open('CN-BIBS-ABSS-10-A_20170524.csv', 'ab')
+    outfile = open('CN-BIBS-ABSS-10-A_20170616.csv', 'ab')
     writer = csv.writer(outfile)
     writer.writerow(r)
     outfile.close()
