@@ -46,7 +46,7 @@ def get_each_invent(f):
 
 
 def write(r):
-    outfile = open('CN-BIBS-ABSS-10-A_20170714.csv', 'ab')
+    outfile = open('CN-BIBS-ABSS-10-A_20170725.csv', 'ab')
     writer = csv.writer(outfile)
     writer.writerow(r)
     outfile.close()
@@ -66,9 +66,7 @@ if __name__ == '__main__':
             line = line[1:]
             line = line.replace(u'\\', '/')
             line = line.replace(u'\n', '')
-
             result = get_each_invent(line)
             write(result)
-
         f.close()
     print 'done'
