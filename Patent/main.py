@@ -46,7 +46,7 @@ def get_each_invent(f):
 
 
 def write(r):
-    outfile = open('CN-BIBS-ABSS-10-B_20170419.csv', 'ab')
+    outfile = open('CN-BIBS-ABSS-10-B_20170503.csv', 'ab')
     writer = csv.writer(outfile)
     writer.writerow(r)
     outfile.close()
@@ -54,11 +54,6 @@ def write(r):
 
 
 if __name__ == '__main__':
-
-    '''
-    result = get_each_invent('1/CN102015000436362CN00001065046750ABIAZH20170315CN00C/CN102015000436362CN00001065046750ABIAZH20170315CN00C.XML')
-    write(result)
-    '''
 
     with open('test.txt') as f:
         cv = f.readlines()
