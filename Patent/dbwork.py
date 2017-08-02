@@ -9,7 +9,7 @@ SELECT TOP (1000)
       [InnerCode]
       ,[SecuCode]
       ,[ChiName]
-      ,[ChiNameAbbr]
+      ,[ChiNameAbbr]    
   FROM [JYDB].[dbo].[SecuMain]
   '''
 

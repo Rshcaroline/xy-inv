@@ -1,5 +1,7 @@
 # -*- coding:utf-8 -*-
 
+# python遍历文件夹
+
 import os
 import os.path
 rootdir = u'C:\\Users\\shihan.ran\\Desktop\\xy-inv\\Patent\\4'                                # 指明被遍历的文件夹
