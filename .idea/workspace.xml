@@ -2,28 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02aac1b3-bc76-4f8c-a397-f481877ffd6a" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0322_315.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0322_315.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0329_3.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0329_3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0405_3.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0405_3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0419_234.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0419_234.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0426_all.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0426_all.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0503_3.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0503_3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0510_14567910131420.TXT" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0510_14567910131420.TXT" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0517_34.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0517_34.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0524_5.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0524_5.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0531_45303233343540.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0531_45303233343540.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0613_1517.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0613_1517.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0620_3.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0620_3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0623_2.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0623_2.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0704_3.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0704_3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0707_3.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0707_3.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0711_1.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0711_1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0714_1.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0714_1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0718_1.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0718_1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0721_1.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0721_1.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/+/0725_1.txt" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0725_1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patent/file_loop.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170315.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170322.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170329.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170405.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170412.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170419.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170503.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170510.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170517.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170524.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170531.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170606.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170609.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170613.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170616.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170620.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170623.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170627.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170630.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170704.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170707.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170711.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170714.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170718.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170721.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170725.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0510_14567910131420.TXT" afterPath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0510_14567910131420.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Patent/main.py" afterPath="$PROJECT_DIR$/Patent/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Patent/test.txt" afterPath="$PROJECT_DIR$/Patent/test.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -35,18 +43,19 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xy_inv$utf_to_gbk.coverage" NAME="utf_to_gbk Coverage Results" MODIFIED="1501575897069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1501226651894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
-    <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501640585472" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
+    <SUITE FILE_PATH="coverage/xy_inv$file_loop.coverage" NAME="file_loop Coverage Results" MODIFIED="1501643553500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
+    <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501643890887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
     <SUITE FILE_PATH="coverage/xy_inv$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1501206817330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$dbwork.coverage" NAME="dbwork Coverage Results" MODIFIED="1501233615585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Patent/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
+            <state relative-caret-position="-12">
+              <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
               <folding>
                 <element signature="e#24#46#0" expanded="true" />
               </folding>
@@ -54,32 +63,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CN-BIBS-ABSS-10-B_20170315.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170315.csv">
+      <file leaf-file-name="file_loop.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Patent/file_loop.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-32802">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="0315_1.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/+/0315_1.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="2002" column="0" lean-forward="false" selection-start-line="2002" selection-start-column="0" selection-end-line="2002" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CN-BIBS-ABSS-10-A_20170725.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170725.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-              <folding />
+            <state relative-caret-position="272">
+              <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+              <folding>
+                <element signature="e#24#33#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,6 +81,19 @@
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dbwork.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Patent/dbwork.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+                <marker date="1501233615560" expanded="true" signature="192:315" ph="SELECT TOP (... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,15 +119,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/patent/11.txt" />
         <option value="$PROJECT_DIR$/patent/main.py" />
         <option value="$PROJECT_DIR$/Patent/15.txt" />
         <option value="$PROJECT_DIR$/Patent/3.txt" />
-        <option value="$PROJECT_DIR$/Patent/20170322-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/2.txt" />
-        <option value="$PROJECT_DIR$/Patent/20170329-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/0405.txt" />
-        <option value="$PROJECT_DIR$/Patent/20170405-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/0419_2.txt" />
         <option value="$PROJECT_DIR$/Patent/0419_3" />
         <option value="$PROJECT_DIR$/Patent/0419_4" />
@@ -163,8 +163,12 @@
         <option value="$PROJECT_DIR$/Patent/20170725-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/test.csv" />
         <option value="$PROJECT_DIR$/Patent/utf_to_gbk.py" />
-        <option value="$PROJECT_DIR$/Patent/main.py" />
         <option value="$PROJECT_DIR$/Patent/20170315-INDEX-001.TXT" />
+        <option value="$PROJECT_DIR$/Patent/20170322-INDEX-001.TXT" />
+        <option value="$PROJECT_DIR$/Patent/file_loop.py" />
+        <option value="$PROJECT_DIR$/Patent/20170329-INDEX-001.TXT" />
+        <option value="$PROJECT_DIR$/Patent/main.py" />
+        <option value="$PROJECT_DIR$/Patent/20170405-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/test.txt" />
       </list>
     </option>
@@ -280,22 +284,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Patent" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="xy-inv" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/Patent/test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method />
-    </configuration>
     <configuration default="false" name="dbwork" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,6 +336,25 @@
       <module name="xy-inv" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patent/utf_to_gbk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="file_loop" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Patent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="xy-inv" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patent/file_loop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -503,18 +510,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.main" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in test.py" />
-      <item index="2" class="java.lang.String" itemvalue="Python.dbwork" />
-      <item index="3" class="java.lang.String" itemvalue="Python.levenshtein" />
-      <item index="4" class="java.lang.String" itemvalue="Python.utf_to_gbk" />
+      <item index="1" class="java.lang.String" itemvalue="Python.dbwork" />
+      <item index="2" class="java.lang.String" itemvalue="Python.levenshtein" />
+      <item index="3" class="java.lang.String" itemvalue="Python.utf_to_gbk" />
+      <item index="4" class="java.lang.String" itemvalue="Python.file_loop" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.main" />
-        <item index="1" class="java.lang.String" itemvalue="Python.utf_to_gbk" />
-        <item index="2" class="java.lang.String" itemvalue="Python.dbwork" />
-        <item index="3" class="java.lang.String" itemvalue="Python.levenshtein" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in test.py" />
+        <item index="1" class="java.lang.String" itemvalue="Python.file_loop" />
+        <item index="2" class="java.lang.String" itemvalue="Python.utf_to_gbk" />
+        <item index="3" class="java.lang.String" itemvalue="Python.dbwork" />
+        <item index="4" class="java.lang.String" itemvalue="Python.levenshtein" />
       </list>
     </recent_temporary>
   </component>
@@ -549,11 +556,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2843552" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36469343" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33548388" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33509514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957717" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -579,29 +586,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Patent/connectdatabase.py" />
-    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A_20170510.csv" />
-    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0510_14567910131420.TXT">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205709">
-          <caret line="17763" column="0" lean-forward="false" selection-start-line="17763" selection-start-column="0" selection-end-line="17763" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/+/0322_15.txt" />
-    <entry file="file://$PROJECT_DIR$/Patent/+/0419_3.txt" />
-    <entry file="file://$PROJECT_DIR$/Patent/+/0419_4.txt" />
     <entry file="file://$USER_HOME$/AppData/Local/Continuum/Anaconda2/Lib/site-packages/sqlalchemy/engine/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="1188" column="0" lean-forward="false" selection-start-line="1188" selection-start-column="0" selection-end-line="1188" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/dbwork.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -856,14 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/Company.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="127824" column="0" lean-forward="false" selection-start-line="127824" selection-start-column="0" selection-end-line="127826" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170315.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-306">
@@ -888,32 +868,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170315.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32802">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="55" column="26" lean-forward="false" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="26" />
-          <folding>
-            <element signature="e#24#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/+/0315_1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="2002" column="0" lean-forward="false" selection-start-line="2002" selection-start-column="0" selection-end-line="2002" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Patent/utf_to_gbk.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -930,6 +884,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170725.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170315.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-82340">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/+/0315_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="2002" column="0" lean-forward="false" selection-start-line="2002" selection-start-column="0" selection-end-line="2002" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/00_readme.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B_20170329.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/+/0322_123.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102000">
+          <caret line="6000" column="0" lean-forward="false" selection-start-line="6000" selection-start-column="0" selection-end-line="6000" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/Company.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="127824" column="0" lean-forward="false" selection-start-line="127824" selection-start-column="0" selection-end-line="127826" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/dbwork.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+            <marker date="1501233615560" expanded="true" signature="192:315" ph="SELECT TOP (... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/file_loop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" lean-forward="false" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/+/0329_12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="45" lean-forward="false" selection-start-line="12" selection-start-column="45" selection-end-line="12" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Patent/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -938,11 +977,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170725.csv">
+    <entry file="file://$PROJECT_DIR$/Patent/+/0405_12.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        <state relative-caret-position="456">
+          <caret line="4000" column="0" lean-forward="false" selection-start-line="4000" selection-start-column="0" selection-end-line="4000" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-12">
+          <caret line="48" column="24" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+          <folding>
+            <element signature="e#24#46#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
