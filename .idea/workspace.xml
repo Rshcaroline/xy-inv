@@ -17,7 +17,7 @@
     <SUITE FILE_PATH="coverage/xy_inv$utf_to_gbk.coverage" NAME="utf_to_gbk Coverage Results" MODIFIED="1501575897069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1501226651894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$file_loop.coverage" NAME="file_loop Coverage Results" MODIFIED="1501643553500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
-    <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501736741377" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
+    <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501737078352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
     <SUITE FILE_PATH="coverage/xy_inv$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1501206817330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$dbwork.coverage" NAME="dbwork Coverage Results" MODIFIED="1501233615585" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
   </component>
@@ -27,8 +27,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Patent/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+            <state relative-caret-position="387">
+              <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
               <folding>
                 <element signature="e#24#46#0" expanded="true" />
               </folding>
@@ -36,10 +36,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="0711_12.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/0711_12.txt">
+      <file leaf-file-name="0718_1.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Patent/+/0718_1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="681">
+            <state relative-caret-position="528">
+              <caret line="2000" column="0" lean-forward="false" selection-start-line="2000" selection-start-column="0" selection-end-line="2000" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="0714_12.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Patent/+/0714_12.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
               <caret line="4000" column="0" lean-forward="false" selection-start-line="4000" selection-start-column="0" selection-end-line="4000" selection-end-column="0" />
               <folding />
             </state>
@@ -49,8 +59,8 @@
       <file leaf-file-name="test.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Patent/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="749">
-              <caret line="228" column="112" lean-forward="false" selection-start-line="228" selection-start-column="112" selection-end-line="228" selection-end-column="112" />
+            <state relative-caret-position="613">
+              <caret line="1563" column="0" lean-forward="false" selection-start-line="1563" selection-start-column="0" selection-end-line="1563" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -78,7 +88,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Patent/0419_4" />
         <option value="$PROJECT_DIR$/Patent/test.py" />
         <option value="$PROJECT_DIR$/Patent/sql.py" />
         <option value="$PROJECT_DIR$/Patent/connectdatabase.py" />
@@ -96,7 +105,6 @@
         <option value="$PROJECT_DIR$/Patent/20170620-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170711-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170714-INDEX-001.TXT" />
-        <option value="$PROJECT_DIR$/Patent/20170718-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A_20170721.csv" />
         <option value="$PROJECT_DIR$/Patent/20170721-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170725-INDEX-001.TXT" />
@@ -127,8 +135,10 @@
         <option value="$PROJECT_DIR$/Patent/20170704-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170707-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/0711_12.txt" />
-        <option value="$PROJECT_DIR$/Patent/test.txt" />
+        <option value="$PROJECT_DIR$/Patent/0714_12.txt" />
         <option value="$PROJECT_DIR$/Patent/main.py" />
+        <option value="$PROJECT_DIR$/Patent/20170718-INDEX-001.TXT" />
+        <option value="$PROJECT_DIR$/Patent/test.txt" />
       </list>
     </option>
   </component>
@@ -188,6 +198,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xy-inv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="xy-inv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Patent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="+" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -205,8 +233,8 @@
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\patent" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\CN-BIBS-ABSS-10-B" />
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\+" />
+      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\CN-BIBS-ABSS-10-B" />
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\CN-BIBS-ABSS-10-A" />
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\patent" />
     </key>
@@ -510,15 +538,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36469343" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28858352" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28858352" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33509514" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -546,14 +573,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0613_1517.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="43" lean-forward="false" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/CN-BIBS-ABSS-10-A_20170620.csv" />
     <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A/+/0620_3.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -832,7 +851,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/0711_12.txt">
+    <entry file="file://$PROJECT_DIR$/Patent/+/0711_12.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="681">
           <caret line="4000" column="0" lean-forward="false" selection-start-line="4000" selection-start-column="0" selection-end-line="4000" selection-end-column="0" />
@@ -842,16 +861,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Patent/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="749">
-          <caret line="228" column="112" lean-forward="false" selection-start-line="228" selection-start-column="112" selection-end-line="228" selection-end-column="112" />
+        <state relative-caret-position="613">
+          <caret line="1563" column="0" lean-forward="false" selection-start-line="1563" selection-start-column="0" selection-end-line="1563" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/+/0714_12.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="4000" column="0" lean-forward="false" selection-start-line="4000" selection-start-column="0" selection-end-line="4000" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/+/0718_1.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="2000" column="0" lean-forward="false" selection-start-line="2000" selection-start-column="0" selection-end-line="2000" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Patent/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="48" column="46" lean-forward="false" selection-start-line="48" selection-start-column="46" selection-end-line="48" selection-end-column="46" />
+        <state relative-caret-position="387">
+          <caret line="47" column="13" lean-forward="false" selection-start-line="47" selection-start-column="13" selection-end-line="47" selection-end-column="13" />
           <folding>
             <element signature="e#24#46#0" expanded="true" />
           </folding>
