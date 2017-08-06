@@ -52,7 +52,7 @@ def write(r):
     outfile.close()
     return 0
 
-
+'''
 if __name__ == '__main__':
 
     with open('test.txt') as f:
@@ -68,3 +68,4 @@ if __name__ == '__main__':
                 print 'cant open'
         f.close()
     print 'done'
+'''
