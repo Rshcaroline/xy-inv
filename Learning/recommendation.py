@@ -22,7 +22,7 @@ for item in data.items():
 
 # 查找与待测用户最相似的用户和Ta喜欢看的电影
 similarUser, films = max(data.items(),\
-                         key=lambda item: len(item[1]&user))
+                         key=lambda item: len(item[1]&user)) # 这里注意lambda函数的写法 定义单句函数 类似宏
 print(item[0])
 
 print('历史数据：')
