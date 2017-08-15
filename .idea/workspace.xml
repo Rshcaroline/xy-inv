@@ -2,75 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02aac1b3-bc76-4f8c-a397-f481877ffd6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Visualization/data.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Visualization/graph.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0315_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0322_123.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0329_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0405_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0412_12345.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0419_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0426_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0503_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0510_23.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0517_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0524_123.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0531_123.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0606_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0609_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0613_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0616_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0620_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0623_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0627_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0630_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0704_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0707_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0711_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0714_12.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0718_1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0728_123.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A_20170315.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170315.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170322.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170329.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170405.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170412.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170419.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170426.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170503.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170510.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170517.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170524.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170531.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170606.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170613.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170616.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170623.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170627.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170630.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170704.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170707.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170711.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170714.csv" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170718.csv" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/btc.iml" afterPath="$PROJECT_DIR$/Btc/.idea/btc.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/Btc/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/misc.xml" afterPath="$PROJECT_DIR$/Btc/.idea/misc.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/modules.xml" afterPath="$PROJECT_DIR$/Btc/.idea/modules.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Btc/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/README.md" afterPath="$PROJECT_DIR$/Btc/Okcoin/README.md" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/__init__.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/api.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/api.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/client.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/client.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/config.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/config.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/erro.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/erro.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/example.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/example.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/requirements.txt" afterPath="$PROJECT_DIR$/Btc/Okcoin/requirements.txt" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/setup.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/setup.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/POLONIEX.py" afterPath="$PROJECT_DIR$/Btc/POLONIEX.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Learning/np_book.ipynb" afterPath="$PROJECT_DIR$/Learning/np_book.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Visualization/graph.py" afterPath="$PROJECT_DIR$/Visualization/graph.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -82,7 +15,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xy_inv$utf_to_gbk.coverage" NAME="utf_to_gbk Coverage Results" MODIFIED="1501575897069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1501226651894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
-    <SUITE FILE_PATH="coverage/xy_inv$graph.coverage" NAME="graph Coverage Results" MODIFIED="1502763888999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
+    <SUITE FILE_PATH="coverage/xy_inv$graph.coverage" NAME="graph Coverage Results" MODIFIED="1502764701891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$aircraft.coverage" NAME="aircraft Coverage Results" MODIFIED="1502270941314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Learning" />
     <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501737078352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
     <SUITE FILE_PATH="coverage/xy_inv$file_loop.coverage" NAME="file_loop Coverage Results" MODIFIED="1501643553500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
@@ -199,8 +132,8 @@
       <file leaf-file-name="graph.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Visualization/graph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+            <state relative-caret-position="482">
+              <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -674,10 +607,10 @@
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33261105" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29252437" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29252437" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32135308" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26638478" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2654388" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29637527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -929,8 +862,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Visualization/graph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+        <state relative-caret-position="482">
+          <caret line="64" column="13" lean-forward="false" selection-start-line="64" selection-start-column="13" selection-end-line="64" selection-end-column="13" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

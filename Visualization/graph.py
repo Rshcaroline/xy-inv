@@ -43,4 +43,25 @@ plt.hist(data2, bins, normed=True, color="#C1F320", alpha=.5)
 plt.show()
 '''
 
+'''
+# hist 其它参数
+x = stats.gamma(3).rvs(50000)
+# plt.hist(x, bins=80) # 每个bins都有分界线
+# 若想让图形更连续化 (去除中间bins线) 用histtype参数
+plt.hist(x, bins=80, histtype="stepfilled", alpha=.8)
+plt.show()
+'''
+
+# 上面的多总体hist 还是独立作图, 并没有将二者结合,
+# 使用jointplot就能作出联合分布图形, 即 x总体和y总体的笛卡尔积分布
+# 不过jointplot要限于两个等量总体.
+
+# jointplot还是非常实用的, 对于两个连续型变量的分布情况, 集中趋势能非常简单的给出.
+# 比如下面这个例子
+x = stats.gamma(2).rvs(5000)
+y = stats.gamma(50).rvs(5000)
+with sns.axes_style("dark"):
+    sns.jointplot(x, y, kind="hex")
+    plt.show()
+
 
