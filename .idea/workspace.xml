@@ -2,10 +2,75 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02aac1b3-bc76-4f8c-a397-f481877ffd6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Learning/np_book.ipynb" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Learning/np_pd.ipynb" afterPath="$PROJECT_DIR$/Learning/np_pd_ppt.ipynb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Visualization/data.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Visualization/graph.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0315_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0322_123.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0329_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0405_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0412_12345.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0419_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0426_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0503_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0510_23.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0517_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0524_123.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0531_123.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0606_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0609_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0613_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0616_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0620_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0623_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0627_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0630_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0704_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0707_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0711_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0714_12.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0718_1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/+/0728_123.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A_20170315.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170315.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170322.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170329.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170405.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170412.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170419.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170426.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170503.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170510.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170517.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170524.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170531.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170606.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170613.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170616.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170623.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170627.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170630.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170704.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170707.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170711.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170714.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-B/CN-BIBS-ABSS-10-B_20170718.csv" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/btc.iml" afterPath="$PROJECT_DIR$/Btc/.idea/btc.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/Btc/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/misc.xml" afterPath="$PROJECT_DIR$/Btc/.idea/misc.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/modules.xml" afterPath="$PROJECT_DIR$/Btc/.idea/modules.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/.idea/workspace.xml" afterPath="$PROJECT_DIR$/Btc/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/README.md" afterPath="$PROJECT_DIR$/Btc/Okcoin/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/__init__.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/__init__.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/api.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/api.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/client.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/client.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/config.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/config.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/erro.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/erro.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/example.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/example.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/requirements.txt" afterPath="$PROJECT_DIR$/Btc/Okcoin/requirements.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/Okcoin/setup.py" afterPath="$PROJECT_DIR$/Btc/Okcoin/setup.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/btc/POLONIEX.py" afterPath="$PROJECT_DIR$/Btc/POLONIEX.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Learning/test.ipynb" afterPath="$PROJECT_DIR$/Learning/test.ipynb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Learning/np_book.ipynb" afterPath="$PROJECT_DIR$/Learning/np_book.ipynb" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,6 +82,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xy_inv$utf_to_gbk.coverage" NAME="utf_to_gbk Coverage Results" MODIFIED="1501575897069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1501226651894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
+    <SUITE FILE_PATH="coverage/xy_inv$graph.coverage" NAME="graph Coverage Results" MODIFIED="1502763888999" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$aircraft.coverage" NAME="aircraft Coverage Results" MODIFIED="1502270941314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Learning" />
     <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501737078352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
     <SUITE FILE_PATH="coverage/xy_inv$file_loop.coverage" NAME="file_loop Coverage Results" MODIFIED="1501643553500" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
@@ -62,7 +128,7 @@
       <file leaf-file-name="snack.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Learning/snack.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
+            <state relative-caret-position="306">
               <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
@@ -111,11 +177,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="np_book.ipynb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="np_book.ipynb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Learning/np_book.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="7" />
+              <selected id="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/data.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="838">
+              <caret line="4712" column="154" lean-forward="false" selection-start-line="4712" selection-start-column="154" selection-end-line="4712" selection-end-column="154" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="graph.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Visualization/graph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="516">
+              <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,8 +213,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="Jupyter Notebook" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -148,8 +236,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Patent/20170609-INDEX-001.TXT" />
-        <option value="$PROJECT_DIR$/Patent/20170620-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170711-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170714-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/CN-BIBS-ABSS-10-A_20170721.csv" />
@@ -199,6 +285,8 @@
         <option value="$PROJECT_DIR$/Learning/aircraft.py" />
         <option value="$PROJECT_DIR$/Learning/np_test.ipynb" />
         <option value="$PROJECT_DIR$/Learning/np_book.ipynb" />
+        <option value="$PROJECT_DIR$/Visualization/data.txt" />
+        <option value="$PROJECT_DIR$/Visualization/graph.py" />
       </list>
     </option>
   </component>
@@ -255,7 +343,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Learning" />
+              <option name="myItemId" value="Visualization" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -295,26 +383,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.snack">
-    <configuration default="false" name="dbmatch" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Patent" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="xy-inv" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patent/dbmatch.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.graph">
     <configuration default="false" name="recommendation" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -386,6 +455,25 @@
       <module name="xy-inv" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Learning/aircraft.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="graph" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Visualization" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="xy-inv" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Visualization/graph.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -540,19 +628,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.dbmatch" />
-      <item index="1" class="java.lang.String" itemvalue="Python.recommendation" />
-      <item index="2" class="java.lang.String" itemvalue="Python.eating" />
-      <item index="3" class="java.lang.String" itemvalue="Python.snack" />
-      <item index="4" class="java.lang.String" itemvalue="Python.aircraft" />
+      <item index="0" class="java.lang.String" itemvalue="Python.recommendation" />
+      <item index="1" class="java.lang.String" itemvalue="Python.eating" />
+      <item index="2" class="java.lang.String" itemvalue="Python.snack" />
+      <item index="3" class="java.lang.String" itemvalue="Python.aircraft" />
+      <item index="4" class="java.lang.String" itemvalue="Python.graph" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.snack" />
-        <item index="1" class="java.lang.String" itemvalue="Python.aircraft" />
-        <item index="2" class="java.lang.String" itemvalue="Python.eating" />
-        <item index="3" class="java.lang.String" itemvalue="Python.recommendation" />
-        <item index="4" class="java.lang.String" itemvalue="Python.dbmatch" />
+        <item index="0" class="java.lang.String" itemvalue="Python.graph" />
+        <item index="1" class="java.lang.String" itemvalue="Python.snack" />
+        <item index="2" class="java.lang.String" itemvalue="Python.aircraft" />
+        <item index="3" class="java.lang.String" itemvalue="Python.eating" />
+        <item index="4" class="java.lang.String" itemvalue="Python.recommendation" />
       </list>
     </recent_temporary>
   </component>
@@ -584,30 +672,33 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36469343" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29175475" sideWeight="0.49583334" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33261105" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29252437" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32135308" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26638478" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29637527" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3336945" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39851484" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33415842" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.log" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -619,10 +710,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Patent/+/0419_12.txt" />
-    <entry file="file://$PROJECT_DIR$/Patent/0426_12.txt" />
-    <entry file="file://$PROJECT_DIR$/Patent/+/0503_12.txt" />
-    <entry file="file://$PROJECT_DIR$/Patent/+/0510_23.txt" />
     <entry file="file://$PROJECT_DIR$/Patent/+/0517_12.txt" />
     <entry file="file://$PROJECT_DIR$/Patent/+/0524_123.txt" />
     <entry file="file://$PROJECT_DIR$/Patent/+/0531_123.txt" />
@@ -788,7 +875,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Learning/snack.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="306">
           <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
@@ -810,10 +897,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shfe_dmkt_20170605_wr.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shfe_dmkt_20170605_ag.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="340">
+          <caret line="112" column="28" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="4712" selection-end-column="154" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Learning/np_book.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="7" />
+          <selected id="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/data.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="838">
+          <caret line="4712" column="154" lean-forward="false" selection-start-line="4712" selection-start-column="154" selection-end-line="4712" selection-end-column="154" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/graph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="41" column="10" lean-forward="false" selection-start-line="41" selection-start-column="10" selection-end-line="41" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
