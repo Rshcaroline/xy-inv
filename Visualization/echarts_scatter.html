@@ -8,8 +8,8 @@
     <!-- 引入 jquery -->
     <script src="jquery-3.2.1.min.js"></script>
     <!-- 引入 js -->
-    <script src="load_ap.js"></script>
-    <script src="load_bp.js"></script>
+    <script src="data_ap_list.js"></script>
+    <script src="data_bp_list.js"></script>
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
@@ -20,9 +20,9 @@
 
         // 指定图表的配置项和数据
 
-        var data1 = [];
-        var data2 = [];  //bp
-        var data3 = [];
+        //var data1 = [];  //ap
+        //var data2 = [];  //bp
+        //var data3 = [];
 
         var random = function (max) {
             return (Math.random() * max).toFixed(3);
@@ -30,109 +30,112 @@
 
         for (var i = 0; i < 500; i++) {
             //data1.push([random(15), random(10), random(1)]);
-            data2.push([random(15), random(10), random(1)]);
-            data3.push([random(15), random(10), random(1)]);
+            //data2.push([random(15), random(10), random(1)]);
+            //data3.push([random(15), random(10), random(1)]);
         }
 
+        /**
         var Ajax = function () {
-            $.getJSON('data_ap.json',function (data){
+            $.getJSON('data_ap_dict.txt',function (data){
                 $.each(data,function (i,item) {
-                    data1.push(item)
+                    data1.push([item.time,item.ap,item.av])
                 })
             })
         };
+         **/
+
 
         option = {
                 animation: false,
                 legend: {
-                    data: ['scatter', 'scatter2', 'scatter3']
+                    data: ['ap', 'bp']
                 },
                 tooltip: {
                 },
                 xAxis: {
+                    name: 'Time',
                     type: 'value',
                     min: 'dataMin',
                     max: 'dataMax',
                     splitLine: {
                         show: true
-                    }
+                    },
+                    scale:true
                 },
                 yAxis: {
+                    name: 'Price',
                     type: 'value',
                     min: 'dataMin',
                     max: 'dataMax',
                     splitLine: {
                         show: true
-                    }
+                    },
+                    scale:true
                 },
-                dataZoom: [
+            dataZoom: [
                     {
-                        type: 'slider',
+                        type: 'slider',  // 这个 dataZoom 组件是 slider 型 dataZoom 组件
                         show: true,
                         xAxisIndex: [0],
-                        start: 1,
-                        end: 35
+                        start: 10,   // 左边在 10% 的位置。
+                        end: 60     // 右边在 60% 的位置。
                     },
                     {
                         type: 'slider',
                         show: true,
                         yAxisIndex: [0],
                         left: '93%',
-                        start: 29,
-                        end: 36
+                        start: 10,
+                        end: 60
                     },
                     {
                         type: 'inside',
                         xAxisIndex: [0],
-                        start: 1,
-                        end: 35
+                        start: 10,
+                        end: 60
                     },
                     {
                         type: 'inside',
                         yAxisIndex: [0],
-                        start: 29,
-                        end: 36
+                        start: 10,
+                        end: 60
                     }
                 ],
                 series: [
                     {
-                        name: 'scatter',
+                        name: 'ap',
                         type: 'scatter',
                         itemStyle: {
                             normal: {
-                                opacity: 0.8
+                                opacity: 0.8  //透明度
                             }
                         },
+                        // symbolSize: 0.5,
                         symbolSize: function (val) {
-                            return val[2] * 40;
+                            return val[2]/10;
                         },
-                        data: data1
+                        data: data1,
+                        encode: { // data 中『维度0』对应到 X 轴
+                            x: 0,
+                            y: 1
+                        }
                     },
                     {
-                        name: 'scatter2',
+                        name: 'bp',
                         type: 'scatter',
                         itemStyle: {
                             normal: {
-                                opacity: 0.8
+                                opacity: 0.8  //透明度
                             }
                         },
                         symbolSize: function (val) {
-                            return val[2] * 40;
+                            return val[2]/10;
                         },
-                        data: data2
-                    },
-                    {
-                        name: 'scatter3',
-                        type: 'scatter',
-                        itemStyle: {
-                            normal: {
-                                opacity: 0.8,
-                            }
-                        },
-                        symbolSize: function (val) {
-                            return val[2] * 40;
-                        },
-                        data: data3
+                        data: data2,
+                        encode: { // data 中『维度0』对应到 X 轴
+                            x: 0,
+                            y: 1
+                        }
                     }
                 ]
         };
