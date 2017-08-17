@@ -1,5 +1,7 @@
 #encoding = utf-8#
 
+#过滤掉数据txt中的空格
+
 import os, sys, string
 
 ifn = r"data.csv"
