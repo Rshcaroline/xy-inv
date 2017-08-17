@@ -72,12 +72,13 @@ for contradiction, time, lastprice, volume, bp1, bv1, bp2, bv2, bp3, bv3, \
         sbp.append(b10)
         sap.append(a10)
 
+'''
 # 将python object写入json文件
 with open('data_ap.json', "w") as f:
     for i in range(len(sap)):
         json.dump(sap[i], f)
         # json.dumps(sap[i],f)
-
+'''
 
 # 直接打开html文件
 url = 'C:\\Users\\shihan.ran\\Desktop\\xy-inv\\Visualization\\echarts_scatter.html'

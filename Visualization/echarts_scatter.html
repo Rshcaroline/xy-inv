@@ -5,9 +5,8 @@
     <title>ECharts</title>
     <!-- 引入 echarts.js -->
     <script src="echarts.js"></script>
-    <!-- 引入 数据 -->
-    <script type="text/javascript" src="data_bp.json"></script>
-    <script type="text/javascript" src="data_ap.json"></script>
+    <!-- 引入 jquery -->
+    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
@@ -18,8 +17,16 @@
 
         // 指定图表的配置项和数据
 
-        var data1 = JSON.parse(data_bp);
-        var data2 = JSON.parse(data_ap);
+        $(function(){
+                $.getJSON("data_ap.json",function(data){
+                    var data1 = [];  //ap
+                    $.each(data,function(){
+                        data1.push(data)
+                    })
+                })
+            })
+
+        var data2 = [];  //bp
         var data3 = [];
 
         var random = function (max) {
@@ -27,103 +34,105 @@
         };
 
         for (var i = 0; i < 500; i++) {
+            //data1.push([random(15), random(10), random(1)]);
+            data2.push([random(15), random(10), random(1)]);
             data3.push([random(15), random(10), random(1)]);
         }
 
         option = {
-            animation: false,
-            legend: {
-                data: ['scatter', 'scatter2', 'scatter3']
-            },
-            tooltip: {
-            },
-            xAxis: {
-                type: 'value',
-                min: 'dataMin',
-                max: 'dataMax',
-                splitLine: {
-                    show: true
-                }
-            },
-            yAxis: {
-                type: 'value',
-                min: 'dataMin',
-                max: 'dataMax',
-                splitLine: {
-                    show: true
-                }
-            },
-            dataZoom: [
-                {
-                    type: 'slider',
-                    show: true,
-                    xAxisIndex: [0],
-                    start: 1,
-                    end: 35
+                animation: false,
+                legend: {
+                    data: ['scatter', 'scatter2', 'scatter3']
                 },
-                {
-                    type: 'slider',
-                    show: true,
-                    yAxisIndex: [0],
-                    left: '93%',
-                    start: 29,
-                    end: 36
+                tooltip: {
                 },
-                {
-                    type: 'inside',
-                    xAxisIndex: [0],
-                    start: 1,
-                    end: 35
+                xAxis: {
+                    type: 'value',
+                    min: 'dataMin',
+                    max: 'dataMax',
+                    splitLine: {
+                        show: true
+                    }
                 },
-                {
-                    type: 'inside',
-                    yAxisIndex: [0],
-                    start: 29,
-                    end: 36
-                }
-            ],
-            series: [
-                {
-                    name: 'scatter',
-                    type: 'scatter',
-                    itemStyle: {
-                        normal: {
-                            opacity: 0.8
-                        }
-                    },
-                    symbolSize: function (val) {
-                        return val[2] * 40;
-                    },
-                    data: data1
+                yAxis: {
+                    type: 'value',
+                    min: 'dataMin',
+                    max: 'dataMax',
+                    splitLine: {
+                        show: true
+                    }
                 },
-                {
-                    name: 'scatter2',
-                    type: 'scatter',
-                    itemStyle: {
-                        normal: {
-                            opacity: 0.8
-                        }
+                dataZoom: [
+                    {
+                        type: 'slider',
+                        show: true,
+                        xAxisIndex: [0],
+                        start: 1,
+                        end: 35
                     },
-                    symbolSize: function (val) {
-                        return val[2] * 40;
+                    {
+                        type: 'slider',
+                        show: true,
+                        yAxisIndex: [0],
+                        left: '93%',
+                        start: 29,
+                        end: 36
                     },
-                    data: data2
-                },
-                {
-                    name: 'scatter3',
-                    type: 'scatter',
-                    itemStyle: {
-                        normal: {
-                            opacity: 0.8,
-                        }
+                    {
+                        type: 'inside',
+                        xAxisIndex: [0],
+                        start: 1,
+                        end: 35
                     },
-                    symbolSize: function (val) {
-                        return val[2] * 40;
+                    {
+                        type: 'inside',
+                        yAxisIndex: [0],
+                        start: 29,
+                        end: 36
+                    }
+                ],
+                series: [
+                    {
+                        name: 'scatter',
+                        type: 'scatter',
+                        itemStyle: {
+                            normal: {
+                                opacity: 0.8
+                            }
+                        },
+                        symbolSize: function (val) {
+                            return val[2] * 40;
+                        },
+                        data: data1
                     },
-                    data: data3
-                }
-            ]
-        }
+                    {
+                        name: 'scatter2',
+                        type: 'scatter',
+                        itemStyle: {
+                            normal: {
+                                opacity: 0.8
+                            }
+                        },
+                        symbolSize: function (val) {
+                            return val[2] * 40;
+                        },
+                        data: data2
+                    },
+                    {
+                        name: 'scatter3',
+                        type: 'scatter',
+                        itemStyle: {
+                            normal: {
+                                opacity: 0.8,
+                            }
+                        },
+                        symbolSize: function (val) {
+                            return val[2] * 40;
+                        },
+                        data: data3
+                    }
+                ]
+        };
 
         // 使用刚指定的配置项和数据显示图表。
         myChart.setOption(option);
