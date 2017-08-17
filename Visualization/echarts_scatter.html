@@ -6,7 +6,10 @@
     <!-- 引入 echarts.js -->
     <script src="echarts.js"></script>
     <!-- 引入 jquery -->
-    <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="jquery-3.2.1.min.js"></script>
+    <!-- 引入 js -->
+    <script src="load_ap.js"></script>
+    <script src="load_bp.js"></script>
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
@@ -17,15 +20,7 @@
 
         // 指定图表的配置项和数据
 
-        $(function(){
-                $.getJSON("data_ap.json",function(data){
-                    var data1 = [];  //ap
-                    $.each(data,function(){
-                        data1.push(data)
-                    })
-                })
-            })
-
+        var data1 = [];
         var data2 = [];  //bp
         var data3 = [];
 
@@ -38,6 +33,14 @@
             data2.push([random(15), random(10), random(1)]);
             data3.push([random(15), random(10), random(1)]);
         }
+
+        var Ajax = function () {
+            $.getJSON('data_ap.json',function (data){
+                $.each(data,function (i,item) {
+                    data1.push(item)
+                })
+            })
+        };
 
         option = {
                 animation: false,

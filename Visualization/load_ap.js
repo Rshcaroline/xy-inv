@@ -4,7 +4,6 @@
 
 function load() {
     var ap = JSON.parse(data)
-    alert(ap[0]);
-    alert(ap[1]);
-    alert(ap[2]);
+    // var data1 = []
+    //data1.push(ap)
 }
