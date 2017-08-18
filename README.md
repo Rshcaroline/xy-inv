@@ -3,7 +3,7 @@ an internship in XY investment company
 
 
 ## Patent 
-### 主要思路为：
+#### 主要思路为：
 用公司申请的账号密码去专利网下载数据，按照专利文件夹的索引index.txt读入每一行存入一个list中，格式如下：
 ```
 \1\CN102015000436362CN00001065046750ABIAZH20170315CN00C\CN102015000436362CN00001065046750ABIAZH20170315CN00C.XML
@@ -24,18 +24,18 @@ line = line.replace(u'\\', '/')
 ```python
 line = line.replace(u'\n', '')
 ```
-### 处理XML文件：
+#### 处理XML文件：
 利用一个叫xml.dom.minidom的包即可，再输出到csv文件。
 
 ## Visualization
-### 主要思路为：
+#### 主要思路为：
 利用已有的数据写一个数据可视化界面出来，包含十个卖价十个买价以及成交量。
-### 成果：
+#### 成果：
 从matplotlib到利用python+echarts作图
 最终的脚本getdatalist可以做到把数据从txt读入/处理去空格/生成csv文件/读入csv文件并生成js文件及全局变量
 脚本的最后一行可以直接自动打开浏览器，显示已经生成好的图片。
 图片包含缩放轴，散点的半径与成交量成正相关。
-### 主要需要注意的：
+#### 主要需要注意的：
 echarts的js文件的导入/json数据格式及与python的互换/html和js的语法/html调用json数据。
 
 ## Learning
