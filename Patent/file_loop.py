@@ -16,4 +16,4 @@ for parent, dirnames, filenames in os.walk(rootdir):    # 三个参数：分别�
                print 'filename is:' + filename
                print 'the full name of the file is:' + os.path.join(parent, filename)  # 输出文件路径信息
 
-                                                                         # windows下为：d:\data\query_text\EL_00154
+                                                                         # windows下为：d:\datatest\query_text\EL_00154

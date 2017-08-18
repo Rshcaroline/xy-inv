@@ -3,23 +3,18 @@ import pandas as pd
 import csv
 import json
 import webbrowser
+import os
 
-def write(r):
-    outfile = open('CN-BIBS-ABSS-10-B_20170718.csv', 'ab')
-    writer = csv.writer(outfile)
-    writer.writerow(r)
-    outfile.close()
-    return 0
+# os.system('python filterspace.py')
 
 reader = csv.reader(open("data.csv"))
 
 sbp = []
 sap = []
 
-for contradiction, time, lastprice, volume, bp1, bv1, bp2, bv2, bp3, bv3, \
-    bp4, bv4, bp5, bv5, bp6, bv6, bp7, bv7, bp8, bv8, bp9, bv9, bp10, bv10, \
-    ap1, av1, ap2, av2, ap3, av3, ap4, av4, ap5, av5, ap6, av6, \
-    ap7, av7, ap8, av8, ap9, av9, ap10, av10 in reader:
+for contradiction, time, lastprice, volume, bp1, bv1, bp2, bv2, bp3, bv3, bp4, bv4, bp5, bv5, bp6, bv6, bp7, \
+    bv7, bp8, bv8, bp9, bv9, bp10, bv10, ap1, av1, ap2, av2, ap3, av3, ap4, av4, ap5, av5, \
+    ap6, av6, ap7, av7, ap8, av8, ap9, av9, ap10, av10 in reader:
 
     if contradiction == 'ag1712':
         b1 = [time,bp1,bv1]
@@ -76,6 +71,9 @@ for contradiction, time, lastprice, volume, bp1, bv1, bp2, bv2, bp3, bv3, \
 # 将python object写入json文件
 with open('data_ap_list.js',"w") as f:
     json.dump(sap, f)
+
+with open('data_bp_list.js',"w") as f:
+    json.dump(sbp, f)
 
 # 直接打开html文件
 url = 'C:\\Users\\shihan.ran\\Desktop\\xy-inv\\Visualization\\echarts_scatter.html'

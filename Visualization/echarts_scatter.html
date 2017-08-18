@@ -13,7 +13,7 @@
 </head>
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
-    <div id="main" style="width: 1200px; height:800px;"></div>
+    <div id="main" style="width: 1800px; height:900px;"></div>
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
@@ -36,8 +36,8 @@
 
         /**
         var Ajax = function () {
-            $.getJSON('data_ap_dict.txt',function (data){
-                $.each(data,function (i,item) {
+            $.getJSON('data_ap_dict.txt',function (datatest){
+                $.each(datatest,function (i,item) {
                     data1.push([item.time,item.ap,item.av])
                 })
             })
@@ -54,13 +54,14 @@
                 },
                 xAxis: {
                     name: 'Time',
-                    type: 'value',
-                    min: 'dataMin',
+                    type: 'value',   //data的类型是数值
+                    min: 'dataMin',  //最大最小值以data为准
                     max: 'dataMax',
                     splitLine: {
                         show: true
                     },
-                    scale:true
+                    scale:true,  //偏离0值
+                    // interval: 500  //手动设定间隔
                 },
                 yAxis: {
                     name: 'Price',
@@ -111,11 +112,11 @@
                             }
                         },
                         // symbolSize: 0.5,
-                        symbolSize: function (val) {
-                            return val[2]/10;
+                        symbolSize: function (val) {   //设定散点的半径与data的第二个坐标(即成交量)成正相关
+                            return val[2]/15;
                         },
                         data: data1,
-                        encode: { // data 中『维度0』对应到 X 轴
+                        encode: { // datatest 中『维度0』对应到 X 轴
                             x: 0,
                             y: 1
                         }
@@ -129,10 +130,10 @@
                             }
                         },
                         symbolSize: function (val) {
-                            return val[2]/10;
+                            return val[2]/15;
                         },
                         data: data2,
-                        encode: { // data 中『维度0』对应到 X 轴
+                        encode: { // datatest 中『维度0』对应到 X 轴
                             x: 0,
                             y: 1
                         }

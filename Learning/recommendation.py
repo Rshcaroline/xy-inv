@@ -16,7 +16,7 @@ user = {'film1', 'film2', 'film3'}
 
 
 '''
-for item in data.items():
+for item in datatest.items():
         print('user:', item[1]&user)
 '''
 

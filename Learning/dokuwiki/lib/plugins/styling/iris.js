@@ -91,7 +91,7 @@
 		startPosProp = ( type === 1 ) ? 'left' : 'top';
 		endPosProp = ( type === 1 ) ? 'right' : 'bottom';
 		dimensionProp = ( type === 1 ) ? 'height' : 'width';
-		template = '<div class="iris-ie-gradient-shim" style="position:absolute;' + dimensionProp + ':100%;' + startPosProp + ':%start%;' + endPosProp + ':%end%;' + filter + ':%filter%;" data-color:"%color%"></div>';
+		template = '<div class="iris-ie-gradient-shim" style="position:absolute;' + dimensionProp + ':100%;' + startPosProp + ':%start%;' + endPosProp + ':%end%;' + filter + ':%filter%;" datatest-color:"%color%"></div>';
 		html = '';
 		// need a positioning context
 		if ( self.css('position') === 'static' ) {

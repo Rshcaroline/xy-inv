@@ -28,8 +28,8 @@ def get_each_invent(f):
     post = root.getElementsByTagName('base:PostCode')[0].firstChild.data
     place = root.getElementsByTagName('business:ApplicantDetails')[0].getElementsByTagName('base:Text')[0].firstChild.data.replace(post, '').replace(' ', '')
     inventor = root.getElementsByTagName('base:Name')[1].firstChild.data
-    # agency = root.getElementsByTagName('base:OrganizationName')[0].firstChild.data
-    # detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.data
+    # agency = root.getElementsByTagName('base:OrganizationName')[0].firstChild.datatest
+    # detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.datatest
 
     print u'申请号：', shenqinghao
     print u'申请日：', shenqingri

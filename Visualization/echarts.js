@@ -701,7 +701,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get visual from series or data.
+	     * Get visual from series or datatest.
 	     * @param {string|Object} finder
 	     *        If string, e.g., 'series', means {seriesIndex: 0}.
 	     *        If Object, could contain some of these properties below:
@@ -710,7 +710,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *            dataIndex / dataIndexInside
 	     *        }
 	     *        If dataIndex is not specified, series visual will be fetched,
-	     *        but not data item visual.
+	     *        but not datatest item visual.
 	     *        If all of seriesIndex, seriesId, seriesName are not specified,
 	     *        visual will be fetched from first series.
 	     * @param {string} visualType 'color', 'symbol', 'symbolSize'
@@ -782,7 +782,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ecModel.restoreData();
 
 	            // TODO
-	            // Save total ecModel here for undo/redo (after restoring data and before processing data).
+	            // Save total ecModel here for undo/redo (after restoring datatest and before processing datatest).
 	            // Undo (restoration of total ecModel) can be carried out in 'action' or outside API call.
 
 	            // Create new coordinate system each update
@@ -1115,7 +1115,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            eventObj.type = actionInfo.event || eventObj.type;
 	            eventObjBatch.push(eventObj);
 
-	            // light update does not perform data process, layout and visual.
+	            // light update does not perform datatest process, layout and visual.
 	            if (isHighDown) {
 	                // method, payload, mainType, subType
 	                updateDirectly(this, updateMethod, batchItem, 'series');
@@ -1279,7 +1279,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    /**
-	     * Processor data in each series
+	     * Processor datatest in each series
 	     *
 	     * @param {module:echarts/model/Global} ecModel
 	     * @private
@@ -1325,7 +1325,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    /**
-	     * Encode visual infomation from data after data processing
+	     * Encode visual infomation from datatest after datatest processing
 	     *
 	     * @param {module:echarts/model/Global} ecModel
 	     * @param {object} layout
@@ -3015,16 +3015,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var nativeReduce = arrayProto.reduce;
 
 	    /**
-	     * Those data types can be cloned:
+	     * Those datatest types can be cloned:
 	     *     Plain object, Array, TypedArray, number, string, null, undefined.
-	     * Those data types will be assgined using the orginal data:
+	     * Those datatest types will be assgined using the orginal datatest:
 	     *     BUILTIN_OBJECT
 	     * Instance of user defined class will be cloned to a plain object, without
 	     * properties in prototype.
-	     * Other data types is not supported (not sure what will happen).
+	     * Other datatest types is not supported (not sure what will happen).
 	     *
 	     * Caution: do not support clone Date, for performance consideration.
-	     * (There might be a large number of date in `series.data`).
+	     * (There might be a large number of date in `series.datatest`).
 	     * So date should not be modified in and out of echarts.
 	     *
 	     * @param {*} source
@@ -3633,8 +3633,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    modelUtil.LABEL_OPTIONS = ['position', 'offset', 'show', 'textStyle', 'distance', 'formatter'];
 
 	    /**
-	     * data could be [12, 2323, {value: 223}, [1221, 23], {value: [2, 23]}]
-	     * This helper method retieves value from data.
+	     * datatest could be [12, 2323, {value: 223}, [1221, 23], {value: [2, 23]}]
+	     * This helper method retieves value from datatest.
 	     * @param {string|number|Date|Array|Object} dataItem
 	     * @return {number|string|Date|Array.<number|string|Date>}
 	     */
@@ -3644,19 +3644,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * data could be [12, 2323, {value: 223}, [1221, 23], {value: [2, 23]}]
+	     * datatest could be [12, 2323, {value: 223}, [1221, 23], {value: [2, 23]}]
 	     * This helper method determine if dataItem has extra option besides value
 	     * @param {string|number|Date|Array|Object} dataItem
 	     */
 	    modelUtil.isDataItemOption = function (dataItem) {
 	        return isObject(dataItem)
 	            && !(dataItem instanceof Array);
-	            // // markLine data can be array
+	            // // markLine datatest can be array
 	            // && !(dataItem[0] && isObject(dataItem[0]) && !(dataItem[0] instanceof Array));
 	    };
 
 	    /**
-	     * This helper method convert value in data.
+	     * This helper method convert value in datatest.
 	     * @param {string|number|Date} value
 	     * @param {Object|string} [dimInfo] If string (like 'x'), dimType defaults 'number'.
 	     */
@@ -3684,7 +3684,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Create a model proxy to be used in tooltip for edge data, markLine data, markPoint data.
+	     * Create a model proxy to be used in tooltip for edge datatest, markLine datatest, markPoint datatest.
 	     * @param {module:echarts/data/List} data
 	     * @param {Object} opt
 	     * @param {string} [opt.seriesIndex]
@@ -4193,10 +4193,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * @see {module:echarts/data/helper/completeDimensions}
+	     * @see {module:echarts/datatest/helper/completeDimensions}
 	     * @param {module:echarts/data/List} data
 	     * @param {string} coordDim
-	     * @return {Array.<string>} data dimensions on the coordDim.
+	     * @return {Array.<string>} datatest dimensions on the coordDim.
 	     */
 	    modelUtil.coordDimToDataDim = function (data, coordDim) {
 	        var dataDim = [];
@@ -4210,11 +4210,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * @see {module:echarts/data/helper/completeDimensions}
+	     * @see {module:echarts/datatest/helper/completeDimensions}
 	     * @param {module:echarts/data/List} data
 	     * @param {string} otherDim Can be `otherDims`
 	     *                        like 'label' or 'tooltip'.
-	     * @return {Array.<string>} data dimensions on the otherDim.
+	     * @return {Array.<string>} datatest dimensions on the otherDim.
 	     */
 	    modelUtil.otherDimToDataDim = function (data, otherDim) {
 	        var dataDim = [];
@@ -4630,7 +4630,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Minimal dicernible data precisioin according to a single pixel.
+	     * Minimal dicernible datatest precisioin according to a single pixel.
 	     *
 	     * @param {Array.<number>} dataExtent
 	     * @param {Array.<number>} pixelExtent
@@ -4647,13 +4647,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get a data of given precision, assuring the sum of percentages
+	     * Get a datatest of given precision, assuring the sum of percentages
 	     * in valueList is 1.
 	     * The largest remainer method is used.
 	     * https://en.wikipedia.org/wiki/Largest_remainder_method
 	     *
-	     * @param {Array.<number>} valueList a list of all data
-	     * @param {number} idx index of the data to be processed in valueList
+	     * @param {Array.<number>} valueList a list of all datatest
+	     * @param {number} idx index of the datatest to be processed in valueList
 	     * @param {number} precision integer number showing digits of precision
 	     * @return {number} percent ranging from 0 to 100
 	     */
@@ -6549,7 +6549,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Create a path element from path data string
+	     * Create a path element from path datatest string
 	     * @param {string} pathData
 	     * @param {Object} opts
 	     * @param {module:zrender/core/BoundingRect} rect
@@ -7224,7 +7224,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            .replace(/,,/g, ',');
 
 	        var n;
-	        // create pipes so that we can split the data
+	        // create pipes so that we can split the datatest
 	        for (n = 0; n < cc.length; n++) {
 	            cs = cs.replace(new RegExp(cc[n], 'g'), '|' + cc[n]);
 	        }
@@ -7488,7 +7488,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    module.exports = {
 	        /**
-	         * Create a Path object from path string data
+	         * Create a Path object from path string datatest
 	         * http://www.w3.org/TR/SVG/paths.html#PathData
 	         * @param  {Object} opts Other options
 	         */
@@ -7497,7 +7497,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Create a Path class from path string data
+	         * Create a Path class from path string datatest
 	         * @param  {string} str
 	         * @param  {Object} opts Other options
 	         */
@@ -8065,7 +8065,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        /**
 	         * Render the element progressively when the value >= 0,
-	         * usefull for large data.
+	         * usefull for large datatest.
 	         * @type {number}
 	         */
 	        progressive: -1,
@@ -9894,7 +9894,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (!trackLen) {
 	            return;
 	        }
-	        // Guess data type
+	        // Guess datatest type
 	        var firstVal = keyframes[0].value;
 	        var isValueArray = isArrayLike(firstVal);
 	        var isValueColor = false;
@@ -11826,7 +11826,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        if (this._saveData) {
 	            /**
-	             * Path data. Stored as flat array
+	             * Path datatest. Stored as flat array
 	             * @type {Array.<Object>}
 	             */
 	            this.data = [];
@@ -12165,7 +12165,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        _expandData: function () {
-	            // Only if data is Float32Array
+	            // Only if datatest is Float32Array
 	            if (!(this.data instanceof Array)) {
 	                var newData = [];
 	                for (var i = 0; i < this._len; i++) {
@@ -12434,7 +12434,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                vec2.max(max, max, max2);
 	            }
 
-	            // No data
+	            // No datatest
 	            if (i === 0) {
 	                min[0] = min[1] = max[0] = max[1] = 0;
 	            }
@@ -12445,7 +12445,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Rebuild path from current data
+	         * Rebuild path from current datatest
 	         * Rebuild path will not consider javascript implemented line dash.
 	         * @param {CanvasRenderingContext} ctx
 	         */
@@ -14777,7 +14777,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                ctx.moveTo(shape.cx + shape.r, shape.cy);
 	            }
 	            // else {
-	            //     if (ctx.allocate && !ctx.data.length) {
+	            //     if (ctx.allocate && !ctx.datatest.length) {
 	            //         ctx.allocate(ctx.CMD_MEM_SIZE.A);
 	            //     }
 	            // }
@@ -16972,8 +16972,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *         legend: {...},
 	     *         visualMap: {...},
 	     *         series: [
-	     *             {data: [...]},
-	     *             {data: [...]},
+	     *             {datatest: [...]},
+	     *             {datatest: [...]},
 	     *             ...
 	     *         ]
 	     *     };
@@ -16987,15 +16987,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *             title: {...},
 	     *             legend: {...},
 	     *             series: [
-	     *                 {data: [...]},
-	     *                 {data: [...]},
+	     *                 {datatest: [...]},
+	     *                 {datatest: [...]},
 	     *                 ...
 	     *             ]
 	     *         },
 	     *         timeline: {...},
 	     *         options: [
-	     *             {title: {...}, series: {data: [...]}},
-	     *             {title: {...}, series: {data: [...]}},
+	     *             {title: {...}, series: {datatest: [...]}},
+	     *             {title: {...}, series: {datatest: [...]}},
 	     *             ...
 	     *         ],
 	     *         media: [
@@ -17450,7 +17450,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            var data = this.getInitialData(option, ecModel);
 	            if (true) {
-	                zrUtil.assert(data, 'getInitialData returned invalid data.');
+	                zrUtil.assert(data, 'getInitialData returned invalid datatest.');
 	            }
 	            /**
 	             * @type {module:echarts/data/List|module:echarts/data/Tree|module:echarts/data/Graph}
@@ -17458,11 +17458,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	             */
 	            set(this, 'dataBeforeProcessed', data);
 
-	            // If we reverse the order (make data firstly, and then make
+	            // If we reverse the order (make datatest firstly, and then make
 	            // dataBeforeProcessed by cloneShallow), cloneShallow will
-	            // cause data.graph.data !== data when using
-	            // module:echarts/data/Graph or module:echarts/data/Tree.
-	            // See module:echarts/data/helper/linkList
+	            // cause datatest.graph.datatest !== datatest when using
+	            // module:echarts/datatest/Graph or module:echarts/datatest/Tree.
+	            // See module:echarts/datatest/helper/linkList
 	            this.restoreData();
 	        },
 
@@ -17503,7 +17503,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 
 	            var data = this.getInitialData(newSeriesOption, ecModel);
-	            // TODO Merge data?
+	            // TODO Merge datatest?
 	            if (data) {
 	                set(this, 'data', data);
 	                set(this, 'dataBeforeProcessed', data.cloneShallow());
@@ -17511,8 +17511,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        fillDataTextStyle: function (data) {
-	            // Default data label emphasis `position` and `show`
-	            // FIXME Tree structure data ?
+	            // Default datatest label emphasis `position` and `show`
+	            // FIXME Tree structure datatest ?
 	            // FIXME Performance ?
 	            if (data) {
 	                for (var i = 0; i < data.length; i++) {
@@ -17524,7 +17524,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Init a data structure from data related option in series
+	         * Init a datatest structure from datatest related option in series
 	         * Must be overwritten
 	         */
 	        getInitialData: function () {},
@@ -17546,7 +17546,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Get data before processed
+	         * Get datatest before processed
 	         * @return {module:echarts/data/List}
 	         */
 	        getRawData: function () {
@@ -17554,13 +17554,13 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Coord dimension to data dimension.
+	         * Coord dimension to datatest dimension.
 	         *
-	         * By default the result is the same as dimensions of series data.
-	         * But in some series data dimensions are different from coord dimensions (i.e.
+	         * By default the result is the same as dimensions of series datatest.
+	         * But in some series datatest dimensions are different from coord dimensions (i.e.
 	         * candlestick and boxplot). Override this method to handle those cases.
 	         *
-	         * Coord dimension to data dimension can be one-to-many
+	         * Coord dimension to datatest dimension can be one-to-many
 	         *
 	         * @param {string} coordDim
 	         * @return {Array.<string>} dimensions on the axis.
@@ -17570,7 +17570,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert data dimension to coord dimension.
+	         * Convert datatest dimension to coord dimension.
 	         *
 	         * @param {string|number} dataDim
 	         * @return {string}
@@ -17700,7 +17700,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Get data indices for show tooltip content. See tooltip.
+	         * Get datatest indices for show tooltip content. See tooltip.
 	         * @abstract
 	         * @param {Array.<string>|string} dim
 	         * @param {Array.<number>} value
@@ -17824,7 +17824,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        render: function (seriesModel, ecModel, api, payload) {},
 
 	        /**
-	         * Highlight series or specified data item
+	         * Highlight series or specified datatest item
 	         * @param  {module:echarts/model/Series} seriesModel
 	         * @param  {module:echarts/model/Global} ecModel
 	         * @param  {module:echarts/ExtensionAPI} api
@@ -17835,7 +17835,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Downplay series or specified data item
+	         * Downplay series or specified datatest item
 	         * @param  {module:echarts/model/Series} seriesModel
 	         * @param  {module:echarts/model/Global} ecModel
 	         * @param  {module:echarts/ExtensionAPI} api
@@ -21978,7 +21978,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        newDom.height = height * dpr;
 
 	        // id不作为索引用，避免可能造成的重名，定义为私有属性
-	        newDom.setAttribute('data-zr-dom-id', id);
+	        newDom.setAttribute('datatest-zr-dom-id', id);
 	        return newDom;
 	    }
 
@@ -22185,7 +22185,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // FIXME Set color function or use the platte color
 	            data.setVisual('color', color);
 
-	            // Only visible series has each data be visual encoded
+	            // Only visible series has each datatest be visual encoded
 	            if (!ecModel.isSeriesFiltered(seriesModel)) {
 	                if (typeof color === 'function' && !(color instanceof Gradient)) {
 	                    data.each(function (idx) {
@@ -22195,7 +22195,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    });
 	                }
 
-	                // itemStyle in each data item
+	                // itemStyle in each datatest item
 	                data.each(function (idx) {
 	                    var itemModel = data.getItemModel(idx);
 	                    var color = itemModel.get(colorAccessPath, true);
@@ -22374,7 +22374,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            for (var i = 0; i < data.length; i++) {
 	                compatItemStyle(data[i]);
 	            }
-	            // mark point data
+	            // mark point datatest
 	            var markPoint = seriesOpt.markPoint;
 	            if (markPoint && markPoint.data) {
 	                var mpData = markPoint.data;
@@ -22382,7 +22382,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    compatItemStyle(mpData[i]);
 	                }
 	            }
-	            // mark line data
+	            // mark line datatest
 	            var markLine = seriesOpt.markLine;
 	            if (markLine && markLine.data) {
 	                var mlData = markLine.data;
@@ -22508,7 +22508,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/* WEBPACK VAR INJECTION */(function(global) {/**
-	 * List for data storage
+	 * List for datatest storage
 	 * @module echarts/data/List
 	 */
 
@@ -22523,7 +22523,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var dataCtors = {
 	        'float': Float64Array,
 	        'int': Int32Array,
-	        // Ordinal data type can be string or int
+	        // Ordinal datatest type can be string or int
 	        'ordinal': Array,
 	        'number': Array,
 	        'time': Array
@@ -22565,7 +22565,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    /**
 	     * @constructor
-	     * @alias module:echarts/data/List
+	     * @alias module:echarts/datatest/List
 	     *
 	     * @param {Array.<string|Object>} dimensions
 	     *      For example, ['someDimName', {name: 'someDimName', type: 'someDimType'}, ...].
@@ -22614,7 +22614,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.dimensions = dimensionNames;
 
 	        /**
-	         * Infomation of each data dimension, like data type.
+	         * Infomation of each datatest dimension, like datatest type.
 	         * @type {Object}
 	         */
 	        this._dimensionInfos = dimensionInfos;
@@ -22630,8 +22630,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this.dataType;
 
 	        /**
-	         * Indices stores the indices of data subset after filtered.
-	         * This data subset will be used in chart.
+	         * Indices stores the indices of datatest subset after filtered.
+	         * This datatest subset will be used in chart.
 	         * @type {Array.<number>}
 	         * @readOnly
 	         */
@@ -22654,7 +22654,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        this._idList = [];
 
 	        /**
-	         * Models of data option is stored sparse for optimizing memory cost
+	         * Models of datatest option is stored sparse for optimizing memory cost
 	         * @type {Array.<module:echarts/model/Model>}
 	         * @private
 	         */
@@ -22718,7 +22718,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    listProto.type = 'list';
 
 	    /**
-	     * If each data item has it's own option
+	     * If each datatest item has it's own option
 	     * @type {boolean}
 	     */
 	    listProto.hasItemOption = true;
@@ -22748,7 +22748,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Initialize from data
+	     * Initialize from datatest
 	     * @param {Array.<Object|number|Array>} data
 	     * @param {Array.<string>} [nameList]
 	     * @param {Function} [dimValueGetter] (dataItem, dimName, dataIndex, dimIndex) => number
@@ -22762,7 +22762,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 	        if (true) {
 	            if (!isDataArray && (typeof data.getItem != 'function' || typeof data.count != 'function')) {
-	                throw new Error('Inavlid data provider.');
+	                throw new Error('Inavlid datatest provider.');
 	            }
 	        }
 
@@ -22814,14 +22814,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	        for (var i = 0; i < size; i++) {
 	            // NOTICE: Try not to write things into dataItem
 	            var dataItem = data.getItem(i);
-	            // Each data item is value
+	            // Each datatest item is value
 	            // [1, 2]
 	            // 2
 	            // Bar chart, line chart which uses category axis
 	            // only gives the 'y' value. 'x' value is the indices of cateogry
 	            // Use a tempValue to normalize the value to be a (x, y) value
 
-	            // Store the data by dimensions
+	            // Store the datatest by dimensions
 	            for (var k = 0; k < dimensions.length; k++) {
 	                var dim = dimensions[k];
 	                var dimStorage = storage[dim];
@@ -22887,15 +22887,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        var value = storage[dim][dataIndex];
-	        // FIXME ordinal data type is not stackable
+	        // FIXME ordinal datatest type is not stackable
 	        if (stack) {
 	            var dimensionInfo = this._dimensionInfos[dim];
 	            if (dimensionInfo && dimensionInfo.stackable) {
 	                var stackedOn = this.stackedOn;
 	                while (stackedOn) {
-	                    // Get no stacked data of stacked on
+	                    // Get no stacked datatest of stacked on
 	                    var stackedValue = stackedOn.get(dim, idx);
-	                    // Considering positive stack, negative stack and empty data
+	                    // Considering positive stack, negative stack and empty datatest
 	                    if ((value >= 0 && stackedValue > 0)  // Positive stack
 	                        || (value <= 0 && stackedValue < 0) // Negative stack
 	                    ) {
@@ -22953,7 +22953,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get extent of data in one dimension
+	     * Get extent of datatest in one dimension
 	     * @param {string} dim
 	     * @param {boolean} stack
 	     * @param {Function} filter
@@ -22992,7 +22992,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get sum of data in one dimension
+	     * Get sum of datatest in one dimension
 	     * @param {string} dim
 	     * @param {boolean} stack
 	     */
@@ -23054,7 +23054,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Retreive the index with given raw data index
+	     * Retreive the index with given raw datatest index
 	     * @param {number} idx
 	     * @param {number} name
 	     * @return {number}
@@ -23113,7 +23113,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var diff = value - this.get(dim, i, stack);
 	            var dist = Math.abs(diff);
 	            if (diff <= maxDistance && dist <= minDist) {
-	                // For the case of two data are same on xAxis, which has sequence data.
+	                // For the case of two datatest are same on xAxis, which has sequence datatest.
 	                // Show the nearest index
 	                // https://github.com/ecomfe/echarts/issues/2869
 	                if (dist < minDist || (diff >= 0 && minDiff < 0)) {
@@ -23128,7 +23128,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get raw data index
+	     * Get raw datatest index
 	     * @param {number} idx
 	     * @return {number}
 	     */
@@ -23138,7 +23138,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get raw data item
+	     * Get raw datatest item
 	     * @param {number} idx
 	     * @return {number}
 	     */
@@ -23274,7 +23274,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        this.indices = newIndices;
 
-	        // Reset data extent
+	        // Reset datatest extent
 	        this._extent = {};
 
 	        return this;
@@ -23376,7 +23376,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Large data down sampling on given dimension
+	     * Large datatest down sampling on given dimension
 	     * @param {string} dimension
 	     * @param {number} rate
 	     * @param {Function} sampleValue
@@ -23396,7 +23396,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        var dimStore = targetStorage[dimension];
 	        var len = this.count();
-	        // Copy data from original data
+	        // Copy datatest from original datatest
 	        for (var i = 0; i < storage[dimension].length; i++) {
 	            targetStorage[dimension][i] = storage[dimension][i];
 	        }
@@ -23413,7 +23413,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	            var value = sampleValue(frameValues);
 	            var idx = frameIndices[sampleIndex(frameValues, value) || 0];
-	            // Only write value on the filtered data
+	            // Only write value on the filtered datatest
 	            dimStore[idx] = value;
 	            indices.push(idx);
 	        }
@@ -23422,7 +23422,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get model of one data item.
+	     * Get model of one datatest item.
 	     *
 	     * @param {number} idx
 	     */
@@ -23434,9 +23434,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Create a data differ
+	     * Create a datatest differ
 	     * @param {module:echarts/data/List} otherList
-	     * @return {module:echarts/data/DataDiffer}
+	     * @return {module:echarts/datatest/DataDiffer}
 	     */
 	    listProto.diff = function (otherList) {
 	        var idList = this._idList;
@@ -23517,7 +23517,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get layout of single data item
+	     * Get layout of single datatest item
 	     * @param {number} idx
 	     */
 	    listProto.getItemLayout = function (idx) {
@@ -23525,7 +23525,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set layout of single data item
+	     * Set layout of single datatest item
 	     * @param {number} idx
 	     * @param {Object} layout
 	     * @param {boolean=} [merge=false]
@@ -23537,14 +23537,14 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Clear all layout of single data item
+	     * Clear all layout of single datatest item
 	     */
 	    listProto.clearItemLayouts = function () {
 	        this._itemLayouts.length = 0;
 	    };
 
 	    /**
-	     * Get visual property of single data item
+	     * Get visual property of single datatest item
 	     * @param {number} idx
 	     * @param {string} key
 	     * @param {boolean} [ignoreParent=false]
@@ -23560,7 +23560,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set visual property of single data item
+	     * Set visual property of single datatest item
 	     *
 	     * @param {number} idx
 	     * @param {string|Object} key
@@ -23601,7 +23601,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        child.dataType = this.dataType;
 	    };
 	    /**
-	     * Set graphic element relative to data. It can be set as null
+	     * Set graphic element relative to datatest. It can be set as null
 	     * @param {number} idx
 	     * @param {module:zrender/Element} [el]
 	     */
@@ -23609,7 +23609,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var hostModel = this.hostModel;
 
 	        if (el) {
-	            // Add data index and series index for indexing the data by element
+	            // Add datatest index and series index for indexing the datatest by element
 	            // Useful in tooltip
 	            el.dataIndex = idx;
 	            el.dataType = this.dataType;
@@ -23656,7 +23656,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        transferProperties(list, this);
 
 
-	        // Clone will not change the data extent and indices
+	        // Clone will not change the datatest extent and indices
 	        list.indices = this.indices.slice();
 
 	        if (this._extent) {
@@ -23718,7 +23718,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        constructor: DataDiffer,
 
 	        /**
-	         * Callback function when add a data
+	         * Callback function when add a datatest
 	         */
 	        add: function (func) {
 	            this._add = func;
@@ -23726,7 +23726,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Callback function when update a data
+	         * Callback function when update a datatest
 	         */
 	        update: function (func) {
 	            this._update = func;
@@ -23734,7 +23734,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Callback function when remove a data
+	         * Callback function when remove a datatest
 	         */
 	        remove: function (func) {
 	            this._remove = func;
@@ -23903,7 +23903,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * If axis extent contain given data
+	         * If axis extent contain given datatest
 	         * @param {number} data
 	         * @return {boolean}
 	         */
@@ -23943,7 +23943,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert data to coord. Data is the rank if it has a ordinal scale
+	         * Convert datatest to coord. Data is the rank if it has a ordinal scale
 	         * @param {number} data
 	         * @param  {boolean} clamp
 	         * @return {number}
@@ -23962,7 +23962,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert coord to data. Data is the rank if it has a ordinal scale
+	         * Convert coord to datatest. Data is the rank if it has a ordinal scale
 	         * @param {number} coord
 	         * @param  {boolean} clamp
 	         * @return {number}
@@ -23982,10 +23982,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert pixel point to data in axis
+	         * Convert pixel point to datatest in axis
 	         * @param {Array.<number>} point
 	         * @param  {boolean} clamp
-	         * @return {number} data
+	         * @return {number} datatest
 	         */
 	        pointToData: function (point, clamp) {
 	            // Should be implemented in derived class if necessary.
@@ -24054,7 +24054,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var dataExtent = this.scale.getExtent();
 
 	            var len = dataExtent[1] - dataExtent[0] + (this.onBand ? 1 : 0);
-	            // Fix #2728, avoid NaN when only one data.
+	            // Fix #2728, avoid NaN when only one datatest.
 	            len === 0 && (len = 1);
 
 	            var size = Math.abs(axisExtent[1] - axisExtent[0]);
@@ -24151,17 +24151,17 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        // Notice: When min/max is not set (that is, when there are null/undefined,
 	        // which is the most common case), these cases should be ensured:
-	        // (1) For 'ordinal', show all axis.data.
+	        // (1) For 'ordinal', show all axis.datatest.
 	        // (2) For others:
 	        //      + `boundaryGap` is applied (if min/max set, boundaryGap is
 	        //      disabled).
 	        //      + If `needCrossZero`, min/max should be zero, otherwise, min/max should
 	        //      be the result that originalExtent enlarged by boundaryGap.
-	        // (3) If no data, it should be ensured that `scale.setBlank` is set.
+	        // (3) If no datatest, it should be ensured that `scale.setBlank` is set.
 
 	        // FIXME
 	        // (1) When min/max is 'dataMin' or 'dataMax', should boundaryGap be able to used?
-	        // (2) When `needCrossZero` and all data is positive/negative, should it be ensured
+	        // (2) When `needCrossZero` and all datatest is positive/negative, should it be ensured
 	        // that the results processed by boundaryGap are positive/negative?
 
 	        if (min == null) {
@@ -24345,8 +24345,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    axisHelper.getAxisRawValue = function (axis, value) {
-	        // In category axis with data zoom, tick is not the original
-	        // index of axis.data. So tick should not be exposed to user
+	        // In category axis with datatest zoom, tick is not the original
+	        // index of axis.datatest. So tick should not be exposed to user
 	        // in category axis.
 	        return axis.type === 'category' ? axis.scale.getLabel(value) : value;
 	    };
@@ -24365,7 +24365,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * http://en.wikipedia.org/wiki/Level_of_measurement
 	 */
 
-	// FIXME only one data
+	// FIXME only one datatest
 
 
 	    var zrUtil = __webpack_require__(4);
@@ -24544,7 +24544,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set extent from data
+	     * Set extent from datatest
 	     * @param {Array.<number>} other
 	     */
 	    scaleProto.unionExtent = function (other) {
@@ -24556,7 +24556,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Set extent from data
+	     * Set extent from datatest
 	     * @param {module:echarts/data/List} data
 	     * @param {string} dim
 	     */
@@ -24600,7 +24600,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * When axis extent depends on data and no data exists,
+	     * When axis extent depends on datatest and no datatest exists,
 	     * axis ticks should not be drawn, which is named 'blank'.
 	     */
 	    scaleProto.isBlank = function () {
@@ -24608,7 +24608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    },
 
 	    /**
-	     * When axis extent depends on data and no data exists,
+	     * When axis extent depends on datatest and no datatest exists,
 	     * axis ticks should not be drawn, which is named 'blank'.
 	     */
 	    scaleProto.setBlank = function (isBlank) {
@@ -24755,7 +24755,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            if (!isFinite(span)) {
 	                return;
 	            }
-	            // User may set axis min 0 and data are all negative
+	            // User may set axis min 0 and datatest are all negative
 	            // FIXME If it needs to reverse ?
 	            if (span < 0) {
 	                span = -span;
@@ -24786,7 +24786,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    var expandSize = extent[0];
 	                    // In the fowllowing case
 	                    //      Axis has been fixed max 100
-	                    //      Plus data are all 100 and axis extent are [100, 100].
+	                    //      Plus datatest are all 100 and axis extent are [100, 100].
 	                    // Extend to the both side will cause expanded max is larger than fixed max.
 	                    // So only expand to the smaller side.
 	                    if (!opt.fixMax) {
@@ -24802,7 +24802,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }
 	            }
 	            var span = extent[1] - extent[0];
-	            // If there are no data and extent are [Infinity, -Infinity]
+	            // If there are no datatest and extent are [Infinity, -Infinity]
 	            if (!isFinite(span)) {
 	                extent[0] = 0;
 	                extent[1] = 1;
@@ -24953,13 +24953,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	    // [About UTC and local time zone]:
-	    // In most cases, `number.parseDate` will treat input data string as local time
+	    // In most cases, `number.parseDate` will treat input datatest string as local time
 	    // (except time zone is specified in time string). And `format.formateTime` returns
 	    // local time by default. option.useUTC is false by default. This design have
 	    // concidered these common case:
 	    // (1) Time that is persistent in server is in UTC, but it is needed to be diplayed
 	    // in local time by default.
-	    // (2) By default, the input data string (e.g., '2011-01-02') should be displayed
+	    // (2) By default, the input datatest string (e.g., '2011-01-02') should be displayed
 	    // as its original time, without any time difference.
 
 	    var zrUtil = __webpack_require__(4);
@@ -25021,7 +25021,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                extent[0] -= ONE_DAY;
 	                extent[1] += ONE_DAY;
 	            }
-	            // If there are no data and extent are [Infinity, -Infinity]
+	            // If there are no datatest and extent are [Infinity, -Infinity]
 	            if (extent[1] === -Infinity && extent[0] === Infinity) {
 	                var d = new Date();
 	                extent[1] = new Date(d.getFullYear(), d.getMonth(), d.getDate());
@@ -25430,15 +25430,15 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    /**
-	     * Helper function to create a list from option data
+	     * Helper function to create a list from option datatest
 	     */
 	    function createListFromArray(data, seriesModel, ecModel) {
-	        // If data is undefined
+	        // If datatest is undefined
 	        data = data || [];
 
 	        if (true) {
 	            if (!zrUtil.isArray(data)) {
-	                throw new Error('Invalid data.');
+	                throw new Error('Invalid datatest.');
 	            }
 	        }
 
@@ -25711,9 +25711,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var categories = categoryAxisModel.getCategories();
 	            if (categories) {
 	                var dataLen = data.length;
-	                // Ordered data is given explicitly like
+	                // Ordered datatest is given explicitly like
 	                // [[3, 0.2], [1, 0.3], [2, 0.15]]
-	                // or given scatter data,
+	                // or given scatter datatest,
 	                // pick the category
 	                if (zrUtil.isArray(data[0]) && data[0].length > 1) {
 	                    nameList = [];
@@ -25739,7 +25739,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * Complete dimensions by data (guess dimension).
+	 * Complete dimensions by datatest (guess dimension).
 	 */
 
 
@@ -25754,7 +25754,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    /**
 	     * Complete the dimensions array, by user defined `dimension` and `encode`,
-	     * and guessing from the data structure.
+	     * and guessing from the datatest structure.
 	     * If no 'value' dimension specified, the first no-named dimension will be
 	     * named as 'value'.
 	     *
@@ -25772,7 +25772,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *                      extraPrefix + 0, extraPrefix + extraBaseIndex + 1 ...
 	     *                      If not specified, extra dim names will be:
 	     *                      extraPrefix, extraPrefix + 0, extraPrefix + 1 ...
-	     * @param {number} [opt.dimCount] If not specified, guess by the first data item.
+	     * @param {number} [opt.dimCount] If not specified, guess by the first datatest item.
 	     * @return {Array.<Object>} [{
 	     *      name: string mandatory,
 	     *      coordDim: string mandatory,
@@ -25933,7 +25933,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    // The rule should not be complex, otherwise user might not
-	    // be able to known where the data is wrong.
+	    // be able to known where the datatest is wrong.
 	    var guessOrdinal = completeDimensions.guessOrdinal = function (data, dimIndex) {
 	        for (var i = 0, len = data.length; i < len; i++) {
 	            var value = retrieveValue(data[i]);
@@ -26758,7 +26758,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    function getVisualGradient(data, coordSys) {
 	        var visualMetaList = data.getVisual('visualMeta');
 	        if (!visualMetaList || !visualMetaList.length || !data.count()) {
-	            // When data.count() is 0, gradient range can not be calculated.
+	            // When datatest.count() is 0, gradient range can not be calculated.
 	            return;
 	        }
 
@@ -26944,7 +26944,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    el.stopAnimation(true);
 	                });
 
-	                // In the case data zoom triggerred refreshing frequently
+	                // In the case datatest zoom triggerred refreshing frequently
 	                // Data may not change if line has a category axis. So it should animate nothing
 	                if (!isPointsSame(this._stackedOnPoints, stackedOnPoints)
 	                    || !isPointsSame(this._points, points)
@@ -27020,7 +27020,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 
 	            this._data = data;
-	            // Save the coordinate system for transition animation when data changed
+	            // Save the coordinate system for transition animation when datatest changed
 	            this._coordSys = coordSys;
 	            this._stackedOnPoints = stackedOnPoints;
 	            this._points = points;
@@ -27039,7 +27039,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    // Create a temporary symbol if it is not exists
 	                    var pt = data.getItemLayout(dataIndex);
 	                    if (!pt) {
-	                        // Null data
+	                        // Null datatest
 	                        return;
 	                    }
 	                    symbol = new Symbol(data, dataIndex);
@@ -27291,7 +27291,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    && data.getItemVisual(idx, 'symbol') !== 'none';
 	    }
 	    /**
-	     * Update symbols draw by new data
+	     * Update symbols draw by new datatest
 	     * @param {module:echarts/data/List} data
 	     * @param {Array.<boolean>} [isIgnore]
 	     */
@@ -27823,7 +27823,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        // convertToIntId(newIdList, oldIdList);
 
-	        // // FIXME One data ?
+	        // // FIXME One datatest ?
 	        // diff = arrayDiff(oldIdList, newIdList);
 
 	        var currPoints = [];
@@ -27841,12 +27841,12 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var pointAdded = true;
 
 	            // FIXME, animation is not so perfect when dataZoom window moves fast
-	            // Which is in case remvoing or add more than one data in the tail or head
+	            // Which is in case remvoing or add more than one datatest in the tail or head
 	            switch (diffItem.cmd) {
 	                case '=':
 	                    var currentPt = oldData.getItemLayout(diffItem.idx);
 	                    var nextPt = newData.getItemLayout(diffItem.idx1);
-	                    // If previous data is NaN, use next point directly
+	                    // If previous datatest is NaN, use next point directly
 	                    if (isNaN(currentPt[0]) || isNaN(currentPt[1])) {
 	                        currentPt = nextPt.slice();
 	                    }
@@ -27878,7 +27878,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                case '-':
 	                    var idx = diffItem.idx;
 	                    var rawIndex = oldData.getRawIndex(idx);
-	                    // Data is replaced. In the case of dynamic data queue
+	                    // Data is replaced. In the case of dynamic datatest queue
 	                    // FIXME FIXME FIXME
 	                    if (rawIndex !== idx) {
 	                        currPoints.push(oldData.getItemLayout(idx));
@@ -27908,7 +27908,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        // Diff result may be crossed if all items are changed
-	        // Sort by data index
+	        // Sort by datatest index
 	        sortedIndices.sort(function (a, b) {
 	            return rawIndices[a] - rawIndices[b];
 	        });
@@ -28011,7 +28011,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        v2Copy(cp1, p);
 	                    }
 	                    else {
-	                        // If next data is null in not connect case
+	                        // If next datatest is null in not connect case
 	                        if (isPointNull(nextP) && !connectNulls) {
 	                            nextP = p;
 	                        }
@@ -28219,7 +28219,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                symbolSize: symbolSize
 	            });
 
-	            // Only visible series has each data be visual encoded
+	            // Only visible series has each datatest be visual encoded
 	            if (!ecModel.isSeriesFiltered(seriesModel)) {
 	                if (typeof symbolSize === 'function') {
 	                    data.each(function (idx) {
@@ -28552,7 +28552,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        });
 
 	        // Resize again if containLabel is enabled
-	        // FIXME It may cause getting wrong grid size in data processing stage
+	        // FIXME It may cause getting wrong grid size in datatest processing stage
 	        this.resize(this.model, api);
 	    };
 
@@ -29023,7 +29023,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return grids;
 	    };
 
-	    // For deciding which dimensions to use when creating list data
+	    // For deciding which dimensions to use when creating list datatest
 	    Grid.dimensions = Grid.prototype.dimensions = Cartesian2D.prototype.dimensions;
 
 	    __webpack_require__(76).register('cartesian2d', Grid);
@@ -29082,7 +29082,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * If contain data
+	         * If contain datatest
 	         * @param {Array.<number>} data
 	         * @return {boolean}
 	         */
@@ -29092,7 +29092,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert series data to an array of points
+	         * Convert series datatest to an array of points
 	         * @param {module:echarts/data/List} data
 	         * @param {boolean} stack
 	         * @return {Array}
@@ -29230,7 +29230,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert data to coord in nd space
+	         * Convert datatest to coord in nd space
 	         * @param {Array.<number>|Object.<string, number>} val
 	         * @return {Array.<number>|Object.<string, number>}
 	         */
@@ -29239,7 +29239,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert coord in nd space to data
+	         * Convert coord in nd space to datatest
 	         * @param  {Array.<number>|Object.<string, number>} val
 	         * @return {Array.<number>|Object.<string, number>}
 	         */
@@ -29500,7 +29500,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    });
 
 	    function getAxisType(axisDim, option) {
-	        // Default axis with data is category axis
+	        // Default axis with datatest is category axis
 	        return option.type || (option.data ? 'category' : 'value');
 	    }
 
@@ -29713,9 +29713,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // min: null,
 	        // 最大值，设置成 'dataMax' 则从数据中计算最大值
 	        // max: null,
-	        // Readonly prop, specifies start value of the range when using data zoom.
+	        // Readonly prop, specifies start value of the range when using datatest zoom.
 	        // rangeStart: null
-	        // Readonly prop, specifies end value of the range when using data zoom.
+	        // Readonly prop, specifies end value of the range when using datatest zoom.
 	        // rangeEnd: null
 	        // 脱离0值比例，放大聚焦到最终_min，_max区间
 	        // scale: false,
@@ -30299,8 +30299,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        textFont: itemTextStyleModel.getFont(),
 	                        fill: typeof textColor === 'function'
 	                            ? textColor(
-	                                // (1) In category axis with data zoom, tick is not the original
-	                                // index of axis.data. So tick should not be exposed to user
+	                                // (1) In category axis with datatest zoom, tick is not the original
+	                                // index of axis.datatest. So tick should not be exposed to user
 	                                // in category axis.
 	                                // (2) Compatible with previous version, which always returns labelStr.
 	                                // But in interval scale labelStr is like '223,445', which maked
@@ -30317,7 +30317,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    z2: 10
 	                });
 
-	                // Pack data for mouse event
+	                // Pack datatest for mouse event
 	                if (triggerEvent) {
 	                    textEl.eventData = makeAxisEventDataBase(axisModel);
 	                    textEl.eventData.targetType = 'axisLabel';
@@ -30825,7 +30825,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                && baseTooltipModel.get('show')
 	            ) {
 	                // Compatible with previous logic. But series.tooltip.trigger: 'axis'
-	                // or series.data[n].tooltip.trigger: 'axis' are not support any more.
+	                // or series.datatest[n].tooltip.trigger: 'axis' are not support any more.
 	                var triggerAxis = baseTooltipModel.get('trigger') === 'axis';
 	                var cross = baseTooltipModel.get('axisPointer.type') === 'cross';
 	                var tooltipAxes = coordSys.getTooltipAxes(baseTooltipModel.get('axisPointer.axis'));
@@ -30945,7 +30945,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    function collectSeriesInfo(result, ecModel) {
-	        // Prepare data for axis trigger
+	        // Prepare datatest for axis trigger
 	        ecModel.eachSeries(function (seriesModel) {
 
 	            // Notice this case: this coordSys is `cartesian2D` but not `grid`.
@@ -32040,8 +32040,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        init: function (option) {
 	            PieSeries.superApply(this, 'init', arguments);
 
-	            // Enable legend selection for each data item
-	            // Use a function instead of direct access because data reference may changed
+	            // Enable legend selection for each datatest item
+	            // Use a function instead of direct access because datatest reference may changed
 	            this.legendDataProvider = function () {
 	                return this.getRawData();
 	            };
@@ -32124,7 +32124,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            percentPrecision: 2,
 
-	            // If still show when all data zero.
+	            // If still show when all datatest zero.
 	            stillShowZeroSum: true,
 
 	            // cursor: null,
@@ -32185,8 +32185,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	/**
 	 * Data selectable mixin for chart series.
-	 * To eanble data select, option of series must have `selectedMode`.
-	 * And each data item will use `selected` to toggle itself selected status
+	 * To eanble datatest select, option of series must have `selectedMode`.
+	 * And each datatest item will use `selected` to toggle itself selected status
 	 *
 	 * @module echarts/chart/helper/DataSelectable
 	 */
@@ -32432,7 +32432,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        );
 
 	        function onEmphasis() {
-	            // Sector may has animation of updating data. Force to move to the last frame
+	            // Sector may has animation of updating datatest. Force to move to the last frame
 	            // Or it may stopped on the wrong shape
 	            sector.stopAnimation(true);
 	            sector.animateTo({
@@ -32702,9 +32702,9 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 151 */
 /***/ function(module, exports) {
 
-	// Pick color from palette for each data item.
+	// Pick color from palette for each datatest item.
 	// Applicable for charts that require applying color palette
-	// in data level (like pie, funnel, chord).
+	// in datatest level (like pie, funnel, chord).
 
 
 	    module.exports = function (seriesType, ecModel) {
@@ -32731,7 +32731,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        var itemModel = dataAll.getItemModel(rawIdx);
 	                        var color = itemModel.get('itemStyle.normal.color')
 	                            || seriesModel.getColorFromPalette(dataAll.getName(rawIdx), paletteScope);
-	                        // Legend may use the visual info in data before processed
+	                        // Legend may use the visual info in datatest before processed
 	                        dataAll.setItemVisual(rawIdx, 'color', color);
 
 	                        // Data is not filtered
@@ -32740,7 +32740,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        }
 	                    }
 	                    else {
-	                        // Set data all color for legend
+	                        // Set datatest all color for legend
 	                        dataAll.setItemVisual(rawIdx, 'color', singleDataColor);
 	                    }
 	                });
@@ -33390,7 +33390,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var largeSymbolProto = LargeSymbolDraw.prototype;
 
 	    /**
-	     * Update symbols draw by new data
+	     * Update symbols draw by new datatest
 	     * @param {module:echarts/data/List} data
 	     */
 	    largeSymbolProto.updateData = function (data) {
@@ -33413,7 +33413,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            )
 	        });
 
-	        // Create symbolProxy to build path for each data
+	        // Create symbolProxy to build path for each datatest
 	        symbolEl.symbolProxy = symbolUtil.createSymbol(
 	            data.getVisual('symbol'), 0, 0, 0, 0
 	        );
@@ -33713,7 +33713,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Radar dimensions is based on the data
+	     * Radar dimensions is based on the datatest
 	     * @type {Array}
 	     */
 	    Radar.dimensions = [];
@@ -34125,8 +34125,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        init: function (option) {
 	            RadarSeries.superApply(this, 'init', arguments);
 
-	            // Enable legend selection for each data item
-	            // Use a function instead of direct access because data reference may changed
+	            // Enable legend selection for each datatest item
+	            // Use a function instead of direct access because datatest reference may changed
 	            this.legendDataProvider = function () {
 	                return this.getRawData();
 	            };
@@ -34616,7 +34616,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        getRawValue: function (dataIndex) {
-	            // Use value stored in data instead because it is calculated from multiple series
+	            // Use value stored in datatest instead because it is calculated from multiple series
 	            // FIXME Provide all value of multiple series ?
 	            return this.getData().get('value', dataIndex);
 	        },
@@ -34637,7 +34637,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	         * @param {number} dataIndex
 	         */
 	        formatTooltip: function (dataIndex) {
-	            // FIXME orignalData and data is a bit confusing
+	            // FIXME orignalData and datatest is a bit confusing
 	            var data = this.getData();
 	            var formattedValue = addCommas(this.getRawValue(dataIndex));
 	            var name = data.getName(dataIndex);
@@ -34839,7 +34839,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            }
 	            else {
 	                if (true) {
-	                    console.warn('Given layoutCenter or layoutSize data are invalid. Use left/top/width/height instead.');
+	                    console.warn('Given layoutCenter or layoutSize datatest are invalid. Use left/top/width/height instead.');
 	                }
 	            }
 	        }
@@ -34897,7 +34897,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    var geoCreator = {
 
-	        // For deciding which dimensions to use when creating list data
+	        // For deciding which dimensions to use when creating list datatest
 	        dimensions: Geo.prototype.dimensions,
 
 	        create: function (ecModel, api) {
@@ -35277,7 +35277,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert series data to a list of points
+	         * Convert series datatest to a list of points
 	         * @param {module:echarts/data/List} data
 	         * @param {boolean} stack
 	         * @return {Array}
@@ -35558,7 +35558,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                vec2.min(min, min, min2);
 	                vec2.max(max, max, max2);
 	            }
-	            // No data
+	            // No datatest
 	            if (i === 0) {
 	                min[0] = min[1] = max[0] = max[1] = 0;
 	            }
@@ -35918,7 +35918,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert a single (lon, lat) data item to (x, y) point.
+	         * Convert a single (lon, lat) datatest item to (x, y) point.
 	         * @param {Array.<number>} data
 	         * @return {Array.<number>}
 	         */
@@ -35930,7 +35930,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert a (x, y) point to (lon, lat) data
+	         * Convert a (x, y) point to (lon, lat) datatest
 	         * @param {Array.<number>} point
 	         * @return {Array.<number>}
 	         */
@@ -36222,7 +36222,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        // Which needs statistic of multiple series and draw on one map.
 	                        // And each series also need a symbol with legend color
 	                        //
-	                        // Layout and visual are put one the different data
+	                        // Layout and visual are put one the different datatest
 	                        fill: mapModel.getData().getVisual('color')
 	                    },
 	                    shape: {
@@ -36234,7 +36234,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    z2: 10
 	                });
 
-	                // First data on the same region
+	                // First datatest on the same region
 	                if (!offset) {
 	                    var fullData = mapModel.mainSeries.getData();
 	                    var name = originalData.getName(idx);
@@ -36412,8 +36412,8 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            var isGeo = mapOrGeoModel.mainType === 'geo';
 
-	            // map series has data, geo model that controlled by map series
-	            // has no data, otherwise data exists.
+	            // map series has datatest, geo model that controlled by map series
+	            // has no datatest, otherwise datatest exists.
 	            var data = mapOrGeoModel.getData && mapOrGeoModel.getData();
 	            isGeo && ecModel.eachComponent({mainType: 'series', subType: 'map'}, function (mapSeries) {
 	                if (!data && mapSeries.getHostGeoModel() === mapOrGeoModel) {
@@ -36475,7 +36475,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                var hoverLabelModel = regionModel.getModel(hoverLabelAccessPath);
 
 	                var dataIdx;
-	                // Use the itemStyle in data if has data
+	                // Use the itemStyle in datatest if has datatest
 	                if (data) {
 	                    dataIdx = data.indexOfName(region.name);
 	                    // Only visual color of each item will be used. It can be encoded by dataRange
@@ -36520,7 +36520,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                var isDataNaN = data && isNaN(data.get('value', dataIdx));
 	                var itemLayout = data && data.getItemLayout(dataIdx);
 	                // In the following cases label will be drawn
-	                // 1. In map series and data value is NaN
+	                // 1. In map series and datatest value is NaN
 	                // 2. In geo component
 	                // 4. Region has no series legendSymbol, which will be add a showLabel flag in mapSymbolLayout
 	                if (
@@ -37153,7 +37153,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                        var name = data.getName(idx);
 	                        var region = geo.getRegion(name);
 
-	                        // If input series.data is [11, 22, '-'/null/undefined, 44],
+	                        // If input series.datatest is [11, 22, '-'/null/undefined, 44],
 	                        // it will be filled with NaN: [11, 22, NaN, 44] and NaN will
 	                        // not be drawn. So here must validate if value is NaN.
 	                        if (!region || isNaN(value)) {
@@ -37507,7 +37507,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            levels: []                  // Each item: {
 	                                        //     visibleMin, itemStyle, visualDimension, label
 	                                        // }
-	            // data: {
+	            // datatest: {
 	            //      value: [],
 	            //      children: [],
 	            //      link: 'http://xxx.xxx.xxx',
@@ -37595,10 +37595,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // A feature is implemented:
 	            // index is monotone increasing with the sequence of
 	            // input id at the first time.
-	            // This feature can make sure that each data item and its
-	            // mapped color have the same index between data list and
+	            // This feature can make sure that each datatest item and its
+	            // mapped color have the same index between datatest list and
 	            // color list at the beginning, which is useful for user
-	            // to adjust data-color mapping.
+	            // to adjust datatest-color mapping.
 
 	            /**
 	             * @private
@@ -37720,7 +37720,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * Tree data structure
+	 * Tree datatest structure
 	 *
 	 * @module echarts/data/Tree
 	 */
@@ -37733,7 +37733,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var completeDimensions = __webpack_require__(110);
 
 	    /**
-	     * @constructor module:echarts/data/Tree~TreeNode
+	     * @constructor module:echarts/datatest/Tree~TreeNode
 	     * @param {string} name
 	     * @param {module:echarts/data/Tree} hostTree
 	     */
@@ -38000,7 +38000,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    /**
 	     * @constructor
-	     * @alias module:echarts/data/Tree
+	     * @alias module:echarts/datatest/Tree
 	     * @param {module:echarts/model/Model} hostModel
 	     * @param {Array.<Object>} levelOptions
 	     */
@@ -38111,7 +38111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * data node format:
+	     * datatest node format:
 	     * {
 	     *     name: ...
 	     *     value: ...
@@ -38223,7 +38223,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @param {module:echarts/data/List} opt.mainData
 	     * @param {Object} [opt.struct] For example, instance of Graph or Tree.
 	     * @param {string} [opt.structAttr] designation: list[structAttr] = struct;
-	     * @param {Object} [opt.datas] {dataType: data},
+	     * @param {Object} [opt.datas] {dataType: datatest},
 	     *                 like: {node: nodeList, edge: edgeList}.
 	     *                 Should contain mainData.
 	     * @param {Object} [opt.datasAttr] {dataType: attr},
@@ -38241,7 +38241,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        linkAll(mainData, datas, opt);
 
-	        // Porxy data original methods.
+	        // Porxy datatest original methods.
 	        each(datas, function (data) {
 	            each(mainData.TRANSFERABLE_METHODS, function (methodName) {
 	                data.wrapMethod(methodName, zrUtil.curry(transferInjection, opt));
@@ -38264,13 +38264,13 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    function transferInjection(opt, res) {
 	        if (isMainData(this)) {
-	            // Transfer datas to new main data.
+	            // Transfer datas to new main datatest.
 	            var datas = zrUtil.extend({}, this[DATAS]);
 	            datas[this.dataType] = res;
 	            linkAll(res, datas, opt);
 	        }
 	        else {
-	            // Modify the reference in main data to point newData.
+	            // Modify the reference in main datatest to point newData.
 	            linkSingle(res, this.dataType, this[MAIN_DATA], opt);
 	        }
 	        return res;
@@ -39929,9 +39929,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *                                            If no option.categories, categories is set
 	     *                                            as [0, 1, 2, ...].
 	     * @param {boolean} [option.loop=false] Whether loop mapping when mappingMethod is 'category'.
-	     * @param {(Array|Object|*)} [option.visual]  Visual data.
+	     * @param {(Array|Object|*)} [option.visual]  Visual datatest.
 	     *                                            when mappingMethod is 'category',
-	     *                                            visual data can be array or object
+	     *                                            visual datatest can be array or object
 	     *                                            (like: {cate1: '#222', none: '#fff'})
 	     *                                            or primary types (which represents
 	     *                                            defualt category visual), otherwise visual
@@ -40747,7 +40747,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    /**
-	     * Set area to each child, and calculate data extent for visual coding.
+	     * Set area to each child, and calculate datatest extent for visual coding.
 	     */
 	    function initChildren(node, nodeModel, totalArea, options, hideChildren, depth) {
 	        var viewChildren = node.children || [];
@@ -40859,8 +40859,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            sum += children[i].getValue();
 	        }
 
-	        // Statistic data extent for latter visual coding.
-	        // Notice: data extent should be calculate based on raw children
+	        // Statistic datatest extent for latter visual coding.
+	        // Notice: datatest extent should be calculate based on raw children
 	        // but not filtered view children, otherwise visual mapping will not
 	        // be stable when zoom (where children is filtered by visibleMin).
 
@@ -41148,7 +41148,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        init: function (option) {
 	            GraphSeries.superApply(this, 'init', arguments);
 
-	            // Provide data for legend select
+	            // Provide datatest for legend select
 	            this.legendDataProvider = function () {
 	                return this._categoriesData;
 	            };
@@ -41363,7 +41363,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            // categories: [],
 
-	            // data: []
+	            // datatest: []
 	            // Or
 	            // nodes: []
 	            //
@@ -41482,7 +41482,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	'use strict';
 	/**
-	 * Graph data structure
+	 * Graph datatest structure
 	 *
 	 * @module echarts/data/Graph
 	 * @author Yi Shen(https://www.github.com/pissang)
@@ -41496,7 +41496,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        return '_EC_' + id;
 	    }
 	    /**
-	     * @alias module:echarts/data/Graph
+	     * @alias module:echarts/datatest/Graph
 	     * @constructor
 	     * @param {boolean} directed
 	     */
@@ -41585,7 +41585,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get node by data index
+	     * Get node by datatest index
 	     * @param  {number} dataIndex
 	     * @return {module:echarts/data/Graph~Node}
 	     */
@@ -41656,7 +41656,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Get edge by data index
+	     * Get edge by datatest index
 	     * @param  {number} dataIndex
 	     * @return {module:echarts/data/Graph~Node}
 	     */
@@ -41824,7 +41824,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	    /**
-	     * @alias module:echarts/data/Graph.Node
+	     * @alias module:echarts/datatest/Graph.Node
 	     */
 	    function Node(id, dataIndex) {
 	        /**
@@ -41897,7 +41897,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	    /**
 	     * 图边
-	     * @alias module:echarts/data/Graph.Edge
+	     * @alias module:echarts/datatest/Graph.Edge
 	     * @param {module:echarts/data/Graph.Node} n1
 	     * @param {module:echarts/data/Graph.Node} n2
 	     * @param {number} [dataIndex=-1]
@@ -43762,7 +43762,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    min[1] -= 1;
 	                }
 	                var aspect = (max[0] - min[0]) / (max[1] - min[1]);
-	                // FIXME If get view rect after data processed?
+	                // FIXME If get view rect after datatest processed?
 	                var viewRect = getViewRect(seriesModel, api, aspect);
 	                // Position may be NaN, use view rect instead
 	                if (isNaN(aspect)) {
@@ -43826,7 +43826,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            if (!zrUtil.isArray(dataOpt)) {
 	                dataOpt = [dataOpt];
 	            }
-	            // Only use the first data item
+	            // Only use the first datatest item
 	            list.initData(dataOpt);
 	            return list;
 	        },
@@ -44301,7 +44301,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    style: {
 	                        x: x,
 	                        y: y,
-	                        // FIXME First data name ?
+	                        // FIXME First datatest name ?
 	                        text: seriesModel.getData().getName(0),
 	                        fill: textStyleModel.getTextColor(),
 	                        textFont: textStyleModel.getFont(),
@@ -44346,7 +44346,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    },
 	                    style: {
 	                        text: formatLabel(
-	                            // FIXME First data name ?
+	                            // FIXME First datatest name ?
 	                            value, detailModel.get('formatter')
 	                        ),
 	                        fill: detailModel.get('backgroundColor'),
@@ -44456,8 +44456,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        init: function (option) {
 	            FunnelSeries.superApply(this, 'init', arguments);
 
-	            // Enable legend selection for each data item
-	            // Use a function instead of direct access because data reference may changed
+	            // Enable legend selection for each datatest item
+	            // Use a function instead of direct access because datatest reference may changed
 	            this.legendDataProvider = function () {
 	                return this.getRawData();
 	            };
@@ -44911,7 +44911,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var y = viewRect.y;
 
 	            var getLinePoints = function (idx, offY) {
-	                // End point index is data.count() and we assign it 0
+	                // End point index is datatest.count() and we assign it 0
 	                var val = data.get('value', idx) || 0;
 	                var itemWidth = number.linearMap(val, [min, max], sizeExtent, true);
 	                var x0;
@@ -45255,7 +45255,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Update axis scale after data processed
+	         * Update axis scale after datatest processed
 	         * @param  {module:echarts/model/Global} ecModel
 	         * @param  {module:echarts/ExtensionAPI} api
 	         */
@@ -45470,7 +45470,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert a dim value of a single item of series data to Point.
+	         * Convert a dim value of a single item of series datatest to Point.
 	         * @param {*} value
 	         * @param {string} dim
 	         * @return {Array}
@@ -45483,7 +45483,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Travel data for one time, get activeState of each data item.
+	         * Travel datatest for one time, get activeState of each datatest item.
 	         * @param {module:echarts/data/List} data
 	         * @param {Functio} cb param: {string} activeState 'active' or 'inactive' or 'normal'
 	         *                            {number} dataIndex
@@ -47472,7 +47472,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var list = new List(dataDimsInfo, this);
 	            list.initData(rawData);
 
-	            // Anication is forbiden in progressive data mode.
+	            // Anication is forbiden in progressive datatest mode.
 	            if (this.option.progressive) {
 	                this.option.animation = false;
 	            }
@@ -47481,7 +47481,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * User can get data raw indices on 'axisAreaSelected' event received.
+	         * User can get datatest raw indices on 'axisAreaSelected' event received.
 	         *
 	         * @public
 	         * @param {string} activeState 'active' or 'inactive' or 'normal'
@@ -47550,7 +47550,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            });
 	        }
 	        // FIXME
-	        // 如果没有设置axis data, 应自动算出，或者提示。
+	        // 如果没有设置axis datatest, 应自动算出，或者提示。
 	    }
 
 	    function convertDimNameToNumber(dimName) {
@@ -47558,7 +47558,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    function generateDataDims(modelDims, rawData) {
-	        // parallelModel.dimension should not be regarded as data
+	        // parallelModel.dimension should not be regarded as datatest
 	        // dimensions. Consider dimensions = ['dim4', 'dim2', 'dim6'];
 
 	        // We detect max dim by parallelModel.dimensions and fist
@@ -47691,7 +47691,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	         */
 	        // _renderForProgressive: function (seriesModel) {
 	        //     var dataGroup = this._dataGroup;
-	        //     var data = seriesModel.getData();
+	        //     var datatest = seriesModel.getData();
 	        //     var oldData = this._data;
 	        //     var coordSys = seriesModel.coordinateSystem;
 	        //     var dimensions = coordSys.dimensions;
@@ -47699,23 +47699,23 @@ return /******/ (function(modules) { // webpackBootstrap
 	        //     var progressive = option.progressive;
 	        //     var smooth = option.smooth ? SMOOTH : null;
 
-	        //     // In progressive animation is disabled, so use simple data diff,
+	        //     // In progressive animation is disabled, so use simple datatest diff,
 	        //     // which effects performance less.
-	        //     // (Typically performance for data with length 7000+ like:
+	        //     // (Typically performance for datatest with length 7000+ like:
 	        //     // simpleDiff: 60ms, addEl: 184ms,
 	        //     // in RMBP 2.4GHz intel i7, OSX 10.9 chrome 50.0.2661.102 (64-bit))
-	        //     if (simpleDiff(oldData, data, dimensions)) {
+	        //     if (simpleDiff(oldData, datatest, dimensions)) {
 	        //         dataGroup.removeAll();
-	        //         data.each(function (dataIndex) {
-	        //             addEl(data, dataGroup, dataIndex, dimensions, coordSys);
+	        //         datatest.each(function (dataIndex) {
+	        //             addEl(datatest, dataGroup, dataIndex, dimensions, coordSys);
 	        //         });
 	        //     }
 
-	        //     updateElCommon(data, progressive, smooth);
+	        //     updateElCommon(datatest, progressive, smooth);
 
 	        //     // Consider switch between progressive and not.
-	        //     data.__plProgressive = true;
-	        //     this._data = data;
+	        //     datatest.__plProgressive = true;
+	        //     this._data = datatest;
 	        // },
 
 	        /**
@@ -47893,7 +47893,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * @file Get initial data and define sankey view's series model
+	 * @file Get initial datatest and define sankey view's series model
 	 * @author Deqing Li(annong035@gmail.com)
 	 */
 
@@ -47909,10 +47909,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        layoutInfo: null,
 
 	        /**
-	         * Init a graph data structure from data in option series
+	         * Init a graph datatest structure from datatest in option series
 	         *
 	         * @param  {Object} option  the object used to config echarts view
-	         * @return {module:echarts/data/List} storage initial data
+	         * @return {module:echarts/data/List} storage initial datatest
 	         */
 	        getInitialData: function (option) {
 	            var links = option.edges || option.links;
@@ -47924,18 +47924,18 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Return the graphic data structure
+	         * Return the graphic datatest structure
 	         *
-	         * @return {module:echarts/data/Graph} graphic data structure
+	         * @return {module:echarts/data/Graph} graphic datatest structure
 	         */
 	        getGraph: function () {
 	            return this.getData().graph;
 	        },
 
 	        /**
-	         * Get edge data of graphic data structure
+	         * Get edge datatest of graphic datatest structure
 	         *
-	         * @return {module:echarts/data/List} data structure of list
+	         * @return {module:echarts/data/List} datatest structure of list
 	         */
 	        getEdgeData: function () {
 	            return this.getGraph().edgeData;
@@ -48959,7 +48959,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        init: function () {
 	            /**
-	             * Old data.
+	             * Old datatest.
 	             * @private
 	             * @type {module:echarts/chart/helper/WhiskerBoxDraw}
 	             */
@@ -49142,7 +49142,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var whiskerBoxDrawProto = WhiskerBoxDraw.prototype;
 
 	    /**
-	     * Update symbols draw by new data
+	     * Update symbols draw by new datatest
 	     * @param {module:echarts/data/List} data
 	     */
 	    whiskerBoxDrawProto.updateData = function (data) {
@@ -49161,7 +49161,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            .update(function (newIdx, oldIdx) {
 	                var symbolEl = oldData.getItemGraphicEl(oldIdx);
 
-	                // Empty data
+	                // Empty datatest
 	                if (!data.hasValue(newIdx)) {
 	                    group.remove(symbolEl);
 	                    return;
@@ -49283,7 +49283,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                color: seriesModel.get(borderColorQuery) || defaulColor
 	            });
 
-	            // Only visible series has each data be visual encoded
+	            // Only visible series has each datatest be visual encoded
 	            if (!ecModel.isSeriesFiltered(seriesModel)) {
 	                data.each(function (idx) {
 	                    var itemModel = data.getItemModel(idx);
@@ -49712,7 +49712,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                legendSymbol: 'roundRect'
 	            });
 
-	            // Only visible series has each data be visual encoded
+	            // Only visible series has each datatest be visual encoded
 	            if (!ecModel.isSeriesFiltered(seriesModel)) {
 	                data.each(function (idx) {
 	                    var itemModel = data.getItemModel(idx);
@@ -50278,7 +50278,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var data = seriesOpt.data;
 	        if (data && data[0] && data[0][0] && data[0][0].coord) {
 	            if (true) {
-	                console.warn('Lines data configuration has been changed to'
+	                console.warn('Lines datatest configuration has been changed to'
 	                    + ' { coords:[[1,2],[2,3]] }');
 	            }
 	            seriesOpt.data = zrUtil.map(data, function (itemOpt) {
@@ -51014,7 +51014,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    var largeLineProto = LargeLineDraw.prototype;
 
 	    /**
-	     * Update symbols draw by new data
+	     * Update symbols draw by new datatest
 	     * @param {module:echarts/data/List} data
 	     */
 	    largeLineProto.updateData = function (data) {
@@ -51080,7 +51080,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var coordSys = seriesModel.coordinateSystem;
 	            var lineData = seriesModel.getData();
 
-	            // FIXME Use data dimensions ?
+	            // FIXME Use datatest dimensions ?
 	            lineData.each(function (idx) {
 	                var itemModel = lineData.getItemModel(idx);
 
@@ -51089,7 +51089,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	                if (true) {
 	                    if (!(coords instanceof Array && coords.length > 0 && coords[0] instanceof Array)) {
-	                        throw new Error('Invalid coords ' + JSON.stringify(coords) + '. Lines must have 2d coords array in data item.');
+	                        throw new Error('Invalid coords ' + JSON.stringify(coords) + '. Lines must have 2d coords array in datatest item.');
 	                    }
 	                }
 	                var pts = [];
@@ -51356,7 +51356,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                var rect;
 
 	                if (coordSysType === 'cartesian2d') {
-	                    // Ignore empty data
+	                    // Ignore empty datatest
 	                    if (isNaN(data.get(dataDims[2], idx))) {
 	                        return;
 	                    }
@@ -51380,7 +51380,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    });
 	                }
 	                else {
-	                    // Ignore empty data
+	                    // Ignore empty datatest
 	                    if (isNaN(data.get(dataDims[1], idx))) {
 	                        return;
 	                    }
@@ -51531,7 +51531,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    Heatmap.prototype = {
 	        /**
 	         * Renders Heatmap and returns the rendered canvas
-	         * @param {Array} data array of data, each has x, y, value
+	         * @param {Array} data array of datatest, each has x, y, value
 	         * @param {number} width canvas width
 	         * @param {number} height canvas height
 	         */
@@ -51572,7 +51572,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            while(offset < pixelLen) {
 	                var alpha = pixels[offset + 3] / 256;
 	                var gradientOffset = Math.floor(alpha * (GRADIENT_LEVELS - 1)) * 4;
-	                // Simple optimize to ignore the empty data
+	                // Simple optimize to ignore the empty datatest
 	                if (alpha > 0) {
 	                    var gradient = isInRange(alpha) ? gradientInRange : gradientOutOfRange;
 	                    // Any alpha > 0 will be mapped to [minOpacity, maxOpacity]
@@ -51696,9 +51696,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	            symbolMargin: null,   // start margin and end margin. Can be a number or a percent string.
 	                                  // Auto margin by defualt.
 	            symbolRepeat: false,  // false/null/undefined, means no repeat.
-	                                  // Can be true, means auto calculate repeat times and cut by data.
-	                                  // Can be a number, specifies repeat times, and do not cut by data.
-	                                  // Can be 'fixed', means auto calculate repeat times but do not cut by data.
+	                                  // Can be true, means auto calculate repeat times and cut by datatest.
+	                                  // Can be a number, specifies repeat times, and do not cut by datatest.
+	                                  // Can be 'fixed', means auto calculate repeat times but do not cut by datatest.
 	            symbolRepeatDirection: 'end', // 'end' means from 'start' to 'end'.
 
 	            symbolClip: false,
@@ -51707,7 +51707,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            barGap: '-100%',      // In most case, overlap is needed.
 
-	            // z can be set in data item, which is z2 actually.
+	            // z can be set in datatest item, which is z2 actually.
 
 	            // Disable progressive
 	            progressive: 0,
@@ -52355,7 +52355,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    }
 
 	    function createBar(data, opt, symbolMeta, isUpdate) {
-	        // bar is the main element for each data.
+	        // bar is the main element for each datatest.
 	        var bar = new graphic.Group();
 	        // bundle is used for location and clip.
 	        var bundle = new graphic.Group();
@@ -52696,7 +52696,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Update axis scale after data processed
+	         * Update axis scale after datatest processed
 	         * @param  {module:echarts/model/Global} ecModel
 	         * @param  {module:echarts/ExtensionAPI} api
 	         */
@@ -52854,7 +52854,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert the series data to concrete point.
+	         * Convert the series datatest to concrete point.
 	         *
 	         * @param  {number|Array.<number>} val
 	         * @return {Array.<number>}
@@ -53316,7 +53316,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    });
 
 	    // This process should proformed after coordinate systems created
-	    // and series data processed. So put it on statistic processing stage.
+	    // and series datatest processed. So put it on statistic processing stage.
 	    echarts.registerProcessor(echarts.PRIORITY.PROCESSOR.STATISTIC, function (ecModel, api) {
 	        // Build axisPointerModel, mergin tooltip.axisPointer model for each axis.
 	        // allAxesInfo should be updated when setOption performed.
@@ -53479,7 +53479,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var snapToValue = payloadInfo.snapToValue;
 
 	        // Fill content of event obj for echarts.connect.
-	        // By defualt use the first involved series data as a sample to connect.
+	        // By defualt use the first involved series datatest as a sample to connect.
 	        if (payloadBatch[0] && outputFinder.seriesIndex == null) {
 	            zrUtil.extend(outputFinder, payloadBatch[0]);
 	        }
@@ -53521,7 +53521,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    dataDim[0],
 	                    value,
 	                    // Add a threshold to avoid find the wrong dataIndex
-	                    // when data length is not same.
+	                    // when datatest length is not same.
 	                    false, axis.type === 'category' ? 0.5 : null
 	                );
 	                if (!dataIndices.length) {
@@ -53570,7 +53570,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var axisModel = axis.model;
 	        var axisPointerModel = axisInfo.axisPointerModel;
 
-	        // If no data, do not create anything in dataByCoordSys,
+	        // If no datatest, do not create anything in dataByCoordSys,
 	        // whose length will be used to judge whether dispatch action.
 	        if (!axisInfo.triggerTooltip || !payloadBatch.length) {
 	            return;
@@ -55166,8 +55166,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            ThemeRiverSeries.superApply(this, 'init', arguments);
 
 	            // Put this function here is for the sake of consistency of code
-	            // Enable legend selection for each data item
-	            // Use a function instead of direct access because data reference may changed
+	            // Enable legend selection for each datatest item
+	            // Use a function instead of direct access because datatest reference may changed
 	            this.legendDataProvider = function () {
 	                return this.getRawData();
 	            };
@@ -55176,20 +55176,20 @@ return /******/ (function(modules) { // webpackBootstrap
 	        /**
 	         * If there is no value of a certain point in the time for some event,set it value to 0.
 	         *
-	         * @param {Array} data  initial data in the option
+	         * @param {Array} data  initial datatest in the option
 	         * @return {Array}
 	         */
 	        fixData: function (data) {
 	            var rawDataLength = data.length;
 
-	            // grouped data by name
+	            // grouped datatest by name
 	            var dataByName = nest()
 	                .key(function (dataItem) {
 	                    return dataItem[2];
 	                })
 	                .entries(data);
 
-	            // data group in each layer
+	            // datatest group in each layer
 	            var layData = zrUtil.map(dataByName, function (d) {
 	                return {
 	                    name: d.key,
@@ -55275,7 +55275,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                }
 	            ];
 
-	            // filter the data item with the value of label is undefined
+	            // filter the datatest item with the value of label is undefined
 	            var filterData = zrUtil.filter(option.data, function (dataItem) {
 	                return dataItem[2] !== undefined;
 	            });
@@ -55313,7 +55313,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * The raw data is divided into multiple layers and each layer
+	         * The raw datatest is divided into multiple layers and each layer
 	         *     has same name.
 	         *
 	         * @return {Array.<Array.<number>>}
@@ -55326,7 +55326,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            for (var i = 0; i < lenCount; ++i) {
 	                indexArr[i] = i;
 	            }
-	            // data group by name
+	            // datatest group by name
 	            var dataByName = nest()
 	                .key(function (index) {
 	                    return data.get('name', index);
@@ -55352,7 +55352,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Get data indices for show tooltip content
+	         * Get datatest indices for show tooltip content
 	         *
 	         * @param {Array.<string>|string} dim  single coordinate dimension
 	         * @param {number} value axis value
@@ -55392,7 +55392,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	        /**
 	         * @override
-	         * @param {number} dataIndex  index of data
+	         * @param {number} dataIndex  index of datatest
 	         */
 	        formatTooltip: function (dataIndex) {
 	            var data = this.getData();
@@ -55817,7 +55817,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /***/ function(module, exports, __webpack_require__) {
 
 	/**
-	 * @file  Using layout algorithm transform the raw data to layout information.
+	 * @file  Using layout algorithm transform the raw datatest to layout information.
 	 * @author Deqing Li(annong035@gmail.com)
 	 */
 
@@ -55867,7 +55867,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    /**
 	     * The layout information about themeriver
 	     *
-	     * @param {module:echarts/data/List} data  data in the series
+	     * @param {module:echarts/data/List} data  datatest in the series
 	     * @param {module:echarts/model/Series} seriesModel  the model object of themeRiver series
 	     * @param {number} height  value used to compute every series height
 	     */
@@ -55876,7 +55876,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            return;
 	        }
 	        var coordSys = seriesModel.coordinateSystem;
-	        // the data in each layer are organized into a series.
+	        // the datatest in each layer are organized into a series.
 	        var layerSeries = seriesModel.getLayerSeries();
 
 	        // the points in each layer.
@@ -56012,7 +56012,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     *
 	     * prepareInfoForCustomSeries {Function}: optional
 	     *     @return {Object} {coordSys: {...}, api: {
-	     *         coord: function (data, clamp) {}, // return point in global.
+	     *         coord: function (datatest, clamp) {}, // return point in global.
 	     *         size: function (dataSize, dataItem) {} // return size of each axis in coordSys.
 	     *     }}
 	     */
@@ -57388,8 +57388,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	            selectedMode: true,
 	            // 配置默认选中状态，可配合LEGEND.SELECTED事件做动态数据载入
 	            // selected: null,
-	            // 图例内容（详见legend.data，数组中每一项代表一个item
-	            // data: [],
+	            // 图例内容（详见legend.datatest，数组中每一项代表一个item
+	            // datatest: [],
 
 	            // Tooltip 相关配置
 	            tooltip: {
@@ -57458,7 +57458,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @type {Object}
 	     * @property {string} type 'legendToggleSelect'
 	     * @property {string} [from]
-	     * @property {string} name Series name or data item name
+	     * @property {string} name Series name or datatest item name
 	     */
 	    echarts.registerAction(
 	        'legendToggleSelect', 'legendselectchanged',
@@ -57469,7 +57469,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @event legendSelect
 	     * @type {Object}
 	     * @property {string} type 'legendSelect'
-	     * @property {string} name Series name or data item name
+	     * @property {string} name Series name or datatest item name
 	     */
 	    echarts.registerAction(
 	        'legendSelect', 'legendselected',
@@ -57480,7 +57480,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * @event legendUnSelect
 	     * @type {Object}
 	     * @property {string} type 'legendUnSelect'
-	     * @property {string} name Series name or data item name
+	     * @property {string} name Series name or datatest item name
 	     */
 	    echarts.registerAction(
 	        'legendUnSelect', 'legendunselected',
@@ -57584,7 +57584,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	                    // If color is a callback function
 	                    if (typeof color === 'function') {
-	                        // Use the first data
+	                        // Use the first datatest
 	                        color = color(seriesModel.getDataParams(0));
 	                    }
 
@@ -57608,7 +57608,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                else {
 	                    // Data legend of pie, funnel
 	                    ecModel.eachRawSeries(function (seriesModel) {
-	                        // In case multiple series has same data name
+	                        // In case multiple series has same datatest name
 	                        if (legendDrawedMap.get(name)) {
 	                            return;
 	                        }
@@ -57642,7 +57642,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	                if (true) {
 	                    if (!legendDrawedMap.get(name)) {
-	                        console.warn(name + ' series not exists. Legend data should be same with series name or data name.');
+	                        console.warn(name + ' series not exists. Legend datatest should be same with series name or datatest name.');
 	                    }
 	                }
 	            }, this);
@@ -57840,7 +57840,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        if (legendModels && legendModels.length) {
 	            ecModel.filterSeries(function (series) {
 	                // If in any legend component the status is not selected.
-	                // Because in legend series is assumed selected when it is not in the legend data.
+	                // Because in legend series is assumed selected when it is not in the legend datatest.
 	                for (var i = 0; i < legendModels.length; i++) {
 	                    if (!legendModels[i].isSelected(series.name)) {
 	                        return false;
@@ -57856,7 +57856,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /* 327 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// FIXME Better way to pack data in graphic element
+	// FIXME Better way to pack datatest in graphic element
 
 
 	    __webpack_require__(298);
@@ -58386,7 +58386,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	                    // Default tooltip content
 	                    // FIXME
-	                    // (1) shold be the first data which has name?
+	                    // (1) shold be the first datatest which has name?
 	                    // (2) themeRiver, firstDataIndex is array, and first line is unnecessary.
 	                    var firstLine = valueLabel;
 	                    singleDefaultHTML.push(
@@ -58427,7 +58427,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var ecModel = this._ecModel;
 	            // Use dataModel in element if possible
 	            // Used when mouseover on a element like markPoint or edge
-	            // In which case, the data is not main data in series.
+	            // In which case, the datatest is not main datatest in series.
 	            var seriesIndex = el.seriesIndex;
 	            var seriesModel = ecModel.getSeriesByIndex(seriesIndex);
 
@@ -58692,7 +58692,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                if (tooltipOpt instanceof Model) {
 	                    tooltipOpt = tooltipOpt.get('tooltip', true);
 	                }
-	                // In each data item tooltip can be simply write:
+	                // In each datatest item tooltip can be simply write:
 	                // {
 	                //  value: 10,
 	                //  tooltip: 'Something you need to know'
@@ -59308,7 +59308,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * If contain data
+	         * If contain datatest
 	         * @param {Array.<number>} data
 	         * @return {boolean}
 	         */
@@ -59395,7 +59395,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert series data to a list of (x, y) points
+	         * Convert series datatest to a list of (x, y) points
 	         * @param {module:echarts/data/List} data
 	         * @return {Array}
 	         *  Return list of coordinates. For example:
@@ -59408,8 +59408,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert a single data item to (x, y) point.
-	         * Parameter data is an array which the first element is radius and the second is angle
+	         * Convert a single datatest item to (x, y) point.
+	         * Parameter datatest is an array which the first element is radius and the second is angle
 	         * @param {Array.<number>} data
 	         * @param {boolean} [clamp=false]
 	         * @return {Array.<number>}
@@ -59422,7 +59422,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert a (x, y) point to data
+	         * Convert a (x, y) point to datatest
 	         * @param {Array.<number>} point
 	         * @param {boolean} [clamp=false]
 	         * @return {Array.<number>}
@@ -59690,7 +59690,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    function getAxisType(axisDim, option) {
-	        // Default axis with data is category axis
+	        // Default axis with datatest is category axis
 	        return option.type || (option.data ? 'category' : 'value');
 	    }
 
@@ -60376,7 +60376,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    r0 = coord[0] + columnOffset;
 	                    r = r0 + columnWidth;
 
-	                    // clamp data if min or max is defined for valueAxis
+	                    // clamp datatest if min or max is defined for valueAxis
 	                    if (valueMax != null) {
 	                        value = Math.min(value, valueMax);
 	                    }
@@ -61118,9 +61118,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // This event will not be triggered when `setOpion`, otherwise dead lock may
 	        // triggered when do `setOption` in event listener, which we do not find
 	        // satisfactory way to solve yet. Some considered resolutions:
-	        // (a) Diff with prevoius selected data ant only trigger event when changed.
-	        // But store previous data and diff precisely (i.e., not only by dataIndex, but
-	        // also detect value changes in selected data) might bring complexity or fragility.
+	        // (a) Diff with prevoius selected datatest ant only trigger event when changed.
+	        // But store previous datatest and diff precisely (i.e., not only by dataIndex, but
+	        // also detect value changes in selected datatest) might bring complexity or fragility.
 	        // (b) Use spectial param like `silent` to suppress event triggering.
 	        // But such kind of volatile param may be weird in `setOption`.
 	        if (!payload) {
@@ -61414,7 +61414,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // Key of the second level is chart element type: `point`, `rect`.
 	    // See moudule:echarts/component/helper/BrushController
 	    // function param:
-	    //      {Object} itemLayout fetch from data.getItemLayout(dataIndex)
+	    //      {Object} itemLayout fetch from datatest.getItemLayout(dataIndex)
 	    //      {Object} selectors {point: selector, rect: selector, ...}
 	    //      {Object} area {range: [[], [], ..], boudingRect}
 	    // function return:
@@ -62627,10 +62627,10 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	        /**
-	         * Convert a time data(time, value) item to (x, y) point.
+	         * Convert a time datatest(time, value) item to (x, y) point.
 	         *
 	         * @override
-	         * @param  {Array|number} data data
+	         * @param  {Array|number} data datatest
 	         * @param  {boolean} [clamp=true] out of range
 	         * @return {Array} point
 	         */
@@ -62666,11 +62666,11 @@ return /******/ (function(modules) { // webpackBootstrap
 	        },
 
 	        /**
-	         * Convert a (x, y) point to time data
+	         * Convert a (x, y) point to time datatest
 	         *
 	         * @override
 	         * @param  {string} point point
-	         * @return {string}       data
+	         * @return {string}       datatest
 	         */
 	        pointToData: function (point) {
 
@@ -63835,16 +63835,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	            yAxisIndex: null,       // Default the first vertical category axis.
 
 	            filterMode: 'filter',   // Possible values: 'filter' or 'empty' or 'weakFilter'.
-	                                    // 'filter': data items which are out of window will be removed. This option is
-	                                    //          applicable when filtering outliers. For each data item, it will be
+	                                    // 'filter': datatest items which are out of window will be removed. This option is
+	                                    //          applicable when filtering outliers. For each datatest item, it will be
 	                                    //          filtered if one of the relevant dimensions is out of the window.
-	                                    // 'weakFilter': data items which are out of window will be removed. This option
-	                                    //          is applicable when filtering outliers. For each data item, it will be
+	                                    // 'weakFilter': datatest items which are out of window will be removed. This option
+	                                    //          is applicable when filtering outliers. For each datatest item, it will be
 	                                    //          filtered only if all  of the relevant dimensions are out of the same
 	                                    //          side of the window.
-	                                    // 'empty': data items which are out of window will be set to empty.
+	                                    // 'empty': datatest items which are out of window will be set to empty.
 	                                    //          This option is applicable when user should not neglect
-	                                    //          that there are some data items out of window.
+	                                    //          that there are some datatest items out of window.
 	                                    // 'none': Do not filter.
 	                                    // Taking line chart as an example, line will be broken in
 	                                    // the filtered points when filterModel is set to 'empty', but
@@ -64304,7 +64304,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // Consider this case: dataZoomModel1 and dataZoomModel2 control the same axis,
 	            // and the option.start or option.end settings are different. The percentRange
 	            // should follow axisProxy.
-	            // (We encounter this problem in toolbox data zoom.)
+	            // (We encounter this problem in toolbox datatest zoom.)
 	            for (var key in axisProxies) {
 	                if (axisProxies.hasOwnProperty(key) && !axisProxies[key].hostedBy(this)) {
 	                    return axisProxies[key];
@@ -64505,7 +64505,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	     * Operate single axis.
 	     * One axis can only operated by one axis operator.
 	     * Different dataZoomModels may be defined to operate the same axis.
-	     * (i.e. 'inside' data zoom and 'slider' data zoom components)
+	     * (i.e. 'inside' datatest zoom and 'slider' datatest zoom components)
 	     * So dataZoomModels share one axisProxy in that case.
 	     *
 	     * @class
@@ -64734,7 +64734,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return;
 	            }
 
-	            // Culculate data window and data extent, and record them.
+	            // Culculate datatest window and datatest extent, and record them.
 	            this._dataExtent = calculateDataExtent(
 	                this, this._dimName, this.getTargetSeriesModels()
 	            );
@@ -64781,11 +64781,11 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            // FIXME
 	            // Toolbox may has dataZoom injected. And if there are stacked bar chart
-	            // with NaN data, NaN will be filtered and stack will be wrong.
+	            // with NaN datatest, NaN will be filtered and stack will be wrong.
 	            // So we need to force the mode to be set empty.
 	            // In fect, it is not a big deal that do not support filterMode-'filter'
 	            // when using toolbox#dataZoom, utill tooltip#dataZoom support "single axis
-	            // selection" some day, which might need "adapt to data extent on the
+	            // selection" some day, which might need "adapt to datatest extent on the
 	            // otherAxis", which is disabled by filterMode-'empty'.
 	            var otherAxisModel = this.getOtherAxisModel();
 	            if (dataZoomModel.get('$fromToolbox')
@@ -64795,7 +64795,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                filterMode = 'empty';
 	            }
 
-	            // Process series data
+	            // Process series datatest
 	            each(seriesModels, function (seriesModel) {
 	                var seriesData = seriesModel.getData();
 	                var dataDims = seriesModel.coordDimToDataDim(axisDim);
@@ -64865,9 +64865,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	        // controlled by a `dataZoom`, otherwise those axes will not be synchronized
 	        // when zooming. But it is difficult to know what is "consistent", considering
 	        // axes have different type or even different meanings (For example, two
-	        // time axes are used to compare data of the same date in different years).
-	        // So basically dataZoom just obtains extent by series.data (in category axis
-	        // extent can be obtained from axis.data).
+	        // time axes are used to compare datatest of the same date in different years).
+	        // So basically dataZoom just obtains extent by series.datatest (in category axis
+	        // extent can be obtained from axis.datatest).
 	        // Nevertheless, user can set min/max/scale on axes to make extent of axes
 	        // consistent.
 	        fixExtentByAxis(axisProxy, dataExtent);
@@ -64880,7 +64880,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var min = axisModel.getMin(true);
 
 	        // For category axis, if min/max/scale are not set, extent is determined
-	        // by axis.data by default.
+	        // by axis.datatest by default.
 	        var isCategoryAxis = axisModel.get('type') === 'category';
 	        var axisDataLen = isCategoryAxis && (axisModel.get('data') || []).length;
 
@@ -64905,7 +64905,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        // For value axis, if min/max/scale are not set, we just use the extent obtained
-	        // by series data, which may be a little different from the extent calculated by
+	        // by series datatest, which may be a little different from the extent calculated by
 	        // `axisHelper.getScaleExtent`. But the different just affects the experience a
 	        // little when zooming. So it will not be fixed until some users require it strongly.
 
@@ -65069,7 +65069,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            bottom: null, // Default align to grid rect.
 
 	            backgroundColor: 'rgba(47,69,84,0)',    // Background of slider zoom component.
-	            // dataBackgroundColor: '#ddd',         // Background coor of data shadow and border of box,
+	            // dataBackgroundColor: '#ddd',         // Background coor of datatest shadow and border of box,
 	                                                    // highest priority, remain for compatibility of
 	                                                    // previous version, but not recommended any more.
 	            dataBackground: {
@@ -65432,7 +65432,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            var step = thisShadowExtent[1] / (data.count() - 1);
 	            var thisCoord = 0;
 
-	            // Optimize for large data shadow
+	            // Optimize for large datatest shadow
 	            var stride = Math.round(data.count() / size[0]);
 	            var lastIsEmpty;
 	            data.each([otherDim], function (value, index) {
@@ -65451,7 +65451,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                var otherCoord = isEmpty
 	                    ? 0 : linearMap(value, otherDataExtent, otherShadowExtent, true);
 
-	                // Attempt to draw data shadow precisely when there are empty value.
+	                // Attempt to draw datatest shadow precisely when there are empty value.
 	                if (isEmpty && !lastIsEmpty && index) {
 	                    areaPoints.push([areaPoints[areaPoints.length - 1][0], 0]);
 	                    linePoints.push([linePoints[linePoints.length - 1][0], 0]);
@@ -65739,7 +65739,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    var range = this._range;
 
 	                    var dataInterval = nonRealtime
-	                        // See #4434, data and axis are not processed and reset yet in non-realtime mode.
+	                        // See #4434, datatest and axis are not processed and reset yet in non-realtime mode.
 	                        ? axisProxy.calculateDataWindow({
 	                            start: range[0], end: range[1]
 	                        }).valueWindow
@@ -66186,9 +66186,9 @@ return /******/ (function(modules) { // webpackBootstrap
 
 
 	    // Only create one roam controller for each coordinate system.
-	    // one roam controller might be refered by two inside data zoom
+	    // one roam controller might be refered by two inside datatest zoom
 	    // components (for example, one for x and one for y). When user
-	    // pan or zoom, only dispatch one action for those data zoom
+	    // pan or zoom, only dispatch one action for those datatest zoom
 	    // components.
 
 	    var zrUtil = __webpack_require__(4);
@@ -66419,16 +66419,16 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // reset should be called after seriesData.restoreData.
 	            dataZoomModel.eachTargetAxis(resetSingleAxis);
 
-	            // Caution: data zoom filtering is order sensitive when using
+	            // Caution: datatest zoom filtering is order sensitive when using
 	            // percent range and no min/max/scale set on axis.
 	            // For example, we have dataZoom definition:
 	            // [
 	            //      {xAxisIndex: 0, start: 30, end: 70},
 	            //      {yAxisIndex: 0, start: 20, end: 80}
 	            // ]
-	            // In this case, [20, 80] of y-dataZoom should be based on data
+	            // In this case, [20, 80] of y-dataZoom should be based on datatest
 	            // that have filtered by x-dataZoom using range of [30, 70],
-	            // but should not be based on full raw data. Thus sliding
+	            // but should not be based on full raw datatest. Thus sliding
 	            // x-dataZoom will change both ranges of xAxis and yAxis,
 	            // while sliding y-dataZoom will only change the range of yAxis.
 	            // So we should filter x-axis after reset x-axis immediately,
@@ -66746,7 +66746,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            itemHeight: null,       // The length of the range control edge.
 	            itemWidth: null,        // The length of the other side.
 	            hoverLink: true,        // Enable hover highlight.
-	            hoverLinkDataSize: null,// The size of hovered data.
+	            hoverLinkDataSize: null,// The size of hovered datatest.
 	            hoverLinkOnHandle: true // Whether trigger hoverLink when hover handle.
 	        },
 
@@ -67193,8 +67193,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	         * this.formatValueText(someVal); // format single numeric value to text.
 	         * this.formatValueText(someVal, true); // format single category value to text.
 	         * this.formatValueText([min, max]); // format numeric min-max to text.
-	         * this.formatValueText([this.dataBound[0], max]); // using data lower bound.
-	         * this.formatValueText([min, this.dataBound[1]]); // using data upper bound.
+	         * this.formatValueText([this.dataBound[0], max]); // using datatest lower bound.
+	         * this.formatValueText([min, this.dataBound[1]]); // using datatest upper bound.
 	         *
 	         * @param {number|Array.<number>} value Real value, or this.dataBound[0 or 1].
 	         * @param {boolean} [isCategory=false] Only available when value is number.
@@ -67264,8 +67264,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	        resetExtent: function () {
 	            var thisOption = this.option;
 
-	            // Can not calculate data extent by data here.
-	            // Because series and data may be modified in processing stage.
+	            // Can not calculate datatest extent by datatest here.
+	            // Because series and datatest may be modified in processing stage.
 	            // So we do not support the feature "auto min/max".
 
 	            var extent = asc([thisOption.min, thisOption.max]);
@@ -67597,9 +67597,9 @@ return /******/ (function(modules) { // webpackBootstrap
 	    // Notice:
 	    // Any "interval" should be by the order of [low, high].
 	    // "handle0" (handleIndex === 0) maps to
-	    // low data value: this._dataInterval[0] and has low coord.
+	    // low datatest value: this._dataInterval[0] and has low coord.
 	    // "handle1" (handleIndex === 1) maps to
-	    // high data value: this._dataInterval[1] and has high coord.
+	    // high datatest value: this._dataInterval[1] and has high coord.
 	    // The logic of transform is implemented in this._createBarGroup.
 
 	    var ContinuousView = VisualMapView.extend({
@@ -67942,7 +67942,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            );
 
 	            var dataExtent = visualMapModel.getExtent();
-	            // Update data interval.
+	            // Update datatest interval.
 	            this._dataInterval = [
 	                linearMap(handleEnds[0], sizeExtent, dataExtent, true),
 	                linearMap(handleEnds[1], sizeExtent, dataExtent, true)
@@ -68236,7 +68236,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                linearMap(hoverRange[0], sizeExtent, dataExtent, true),
 	                linearMap(hoverRange[1], sizeExtent, dataExtent, true)
 	            ];
-	            // Consider data range is out of visualMap range, see test/visualMap-continuous.html,
+	            // Consider datatest range is out of visualMap range, see test/visualMap-continuous.html,
 	            // where china and india has very large population.
 	            hoverRange[0] < sizeExtent[0] && (valueRange[0] = -Infinity);
 	            hoverRange[1] > sizeExtent[1] && (valueRange[1] = Infinity);
@@ -69780,7 +69780,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            coordDimsInfos = zrUtil.map(coordSys && coordSys.dimensions, function (coordDim) {
 	                var info = seriesModel.getData().getDimensionInfo(
 	                    seriesModel.coordDimToDataDim(coordDim)[0]
-	                ) || {}; // In map series data don't have lng and lat dimension. Fallback to same with coordSys
+	                ) || {}; // In map series datatest don't have lng and lat dimension. Fallback to same with coordSys
 	                info.name = coordDim;
 	                return info;
 	            });
@@ -69891,7 +69891,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Transform markPoint data item to format used in List by do the following
+	     * Transform markPoint datatest item to format used in List by do the following
 	     * 1. Calculate statistic like `max`, `min`, `average`
 	     * 2. Convert `item.xAxis`, `item.yAxis` to `item.coord` array
 	     * @param  {module:echarts/model/Series} seriesModel
@@ -69904,7 +69904,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        var coordSys = seriesModel.coordinateSystem;
 
 	        // 1. If not specify the position with pixel directly
-	        // 2. If `coord` is not a data array. Which uses `xAxis`,
+	        // 2. If `coord` is not a datatest array. Which uses `xAxis`,
 	        // `yAxis` to specify the coord on each dimension
 
 	        // parseFloat first because item.x and item.y can be percent string like '20%'
@@ -69970,7 +69970,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	    };
 
 	    /**
-	     * Filter data which is out of coordinateSystem range
+	     * Filter datatest which is out of coordinateSystem range
 	     * [dataFilter description]
 	     * @param  {module:echarts/coord/*} [coordSys]
 	     * @param  {Object} item
@@ -70141,7 +70141,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            && (
 	                mlType === 'min' || mlType === 'max' || mlType === 'average'
 	                // In case
-	                // data: [{
+	                // datatest: [{
 	                //   yAxis: 10
 	                // }]
 	                || (item.xAxis != null || item.yAxis != null)
@@ -70197,7 +70197,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            zrUtil.extend({}, item[2])
 	        ];
 
-	        // Avoid line data type is extended by from(to) data type
+	        // Avoid line datatest type is extended by from(to) datatest type
 	        item[2].type = item[2].type || '';
 
 	        // Merge from option and to option into line option
@@ -70226,7 +70226,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // In case
 	            // {
 	            //  markLine: {
-	            //    data: [{ yAxis: 2 }]
+	            //    datatest: [{ yAxis: 2 }]
 	            //  }
 	            // }
 	            if (
@@ -70270,7 +70270,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // Expand line to the edge of grid if value on one axis is Inifnity
 	            // In case
 	            //  markLine: {
-	            //    data: [{
+	            //    datatest: [{
 	            //      yAxis: 2
 	            //      // or
 	            //      type: 'average'
@@ -70348,7 +70348,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            mlModel.__from = fromData;
 	            mlModel.__to = toData;
-	            // Line data for tooltip and formatter
+	            // Line datatest for tooltip and formatter
 	            mlModel.setData(lineData);
 
 	            var symbolType = mlModel.get('symbol');
@@ -70428,7 +70428,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            coordDimsInfos = zrUtil.map(coordSys && coordSys.dimensions, function (coordDim) {
 	                var info = seriesModel.getData().getDimensionInfo(
 	                    seriesModel.coordDimToDataDim(coordDim)[0]
-	                ) || {}; // In map series data don't have lng and lat dimension. Fallback to same with coordSys
+	                ) || {}; // In map series datatest don't have lng and lat dimension. Fallback to same with coordSys
 	                info.name = coordDim;
 	                return info;
 	            });
@@ -70591,7 +70591,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            // In case
 	            // {
 	            //  markArea: {
-	            //    data: [{ yAxis: 2 }]
+	            //    datatest: [{ yAxis: 2 }]
 	            //  }
 	            // }
 	            if (
@@ -70701,7 +70701,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	            var areaData = createList(coordSys, seriesModel, maModel);
 
-	            // Line data for tooltip and formatter
+	            // Line datatest for tooltip and formatter
 	            maModel.setData(areaData);
 
 	            // Update visual and layout of line
@@ -70812,7 +70812,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            coordDimsInfos = zrUtil.map(coordSys && coordSys.dimensions, function (coordDim) {
 	                var info = seriesModel.getData().getDimensionInfo(
 	                    seriesModel.coordDimToDataDim(coordDim)[0]
-	                ) || {}; // In map series data don't have lng and lat dimension. Fallback to same with coordSys
+	                ) || {}; // In map series datatest don't have lng and lat dimension. Fallback to same with coordSys
 	                info.name = coordDim;
 	                return info;
 	            });
@@ -71055,7 +71055,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	            inverse: false,
 
 	            tooltip: {                          // boolean or Object
-	                trigger: 'item'                 // data item may also have tootip attr.
+	                trigger: 'item'                 // datatest item may also have tootip attr.
 	            },
 
 	            symbol: 'emptyCircle',
@@ -72650,7 +72650,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return zrUtil.merge({
 	                    id: seriesId,
 	                    type: 'line',
-	                    // Preserve data related option
+	                    // Preserve datatest related option
 	                    data: seriesModel.get('data'),
 	                    stack: seriesModel.get('stack'),
 	                    markPoint: seriesModel.get('markPoint'),
@@ -72663,7 +72663,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                return zrUtil.merge({
 	                    id: seriesId,
 	                    type: 'bar',
-	                    // Preserve data related option
+	                    // Preserve datatest related option
 	                    data: seriesModel.get('data'),
 	                    stack: seriesModel.get('stack'),
 	                    markPoint: seriesModel.get('markPoint'),
@@ -73214,7 +73214,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                if (zrUtil.isObject(newVal) && !zrUtil.isArray(newVal)) {
 	                    newVal = newVal.value;
 	                }
-	                // Original data has option
+	                // Original datatest has option
 	                return zrUtil.defaults({
 	                    value: newVal
 	                }, original);
@@ -74143,7 +74143,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	                    var startAngle = data[i++] + angle;
 	                    var endAngle = data[i++] + startAngle + angle;
 	                    // FIXME
-	                    // var psi = data[i++];
+	                    // var psi = datatest[i++];
 	                    i++;
 	                    var clockwise = data[i++];
 

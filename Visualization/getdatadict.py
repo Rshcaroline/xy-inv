@@ -4,14 +4,7 @@ import csv
 import json
 import webbrowser
 
-def write(r):
-    outfile = open('CN-BIBS-ABSS-10-B_20170718.csv', 'ab')
-    writer = csv.writer(outfile)
-    writer.writerow(r)
-    outfile.close()
-    return 0
-
-reader = csv.reader(open("data.csv"))
+reader = csv.reader(open("datatest.csv"))
 
 sbp = []
 sap = []

@@ -3,7 +3,7 @@ import pandas as pd
 import csv
 import matplotlib.pyplot as plt
 
-reader = csv.reader(open("data.csv"))
+reader = csv.reader(open("datatest.csv"))
 
 stm = []
 sbp = []
