@@ -15,6 +15,7 @@ i = 0
 for eachline in infile.readlines():
     # lines = eachline.split(' ')
     lines = re.sub(', ',',',eachline)   # 将", " 替换成 "," 这样在处理数据的时候才方便读入成一个int 而不是string
+    # eachline.replace(', ',',')
     outfile.write(lines)
     i += 1
     print(i)

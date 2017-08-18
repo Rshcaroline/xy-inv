@@ -14,16 +14,20 @@
 <body>
     <!-- 为ECharts准备一个具备大小（宽高）的Dom -->
     <div id="main" style="width: 1800px; height:900px;"></div>
+
     <script type="text/javascript">
         // 基于准备好的dom，初始化echarts实例
         var myChart = echarts.init(document.getElementById('main'));
 
         // 指定图表的配置项和数据
 
+        /**
+         * //后已把data设置成全局变量
         //var data1 = [];  //ap
         //var data2 = [];  //bp
         //var data3 = [];
 
+         //随机定义data值 起初用作测试
         var random = function (max) {
             return (Math.random() * max).toFixed(3);
         };
@@ -34,7 +38,7 @@
             //data3.push([random(15), random(10), random(1)]);
         }
 
-        /**
+         //本想用jQuery来获取json数据
         var Ajax = function () {
             $.getJSON('data_ap_dict.txt',function (datatest){
                 $.each(datatest,function (i,item) {
@@ -44,6 +48,7 @@
         };
          **/
 
+        myChart.showLoading();  //如果是异步加载数据 此处可以显示一个loading画面
 
         option = {
                 animation: false,
@@ -60,8 +65,9 @@
                     splitLine: {
                         show: true
                     },
-                    scale:true,  //偏离0值
-                    // interval: 500  //手动设定间隔
+                    scale:true , //偏离0值
+                    splitNumber: 5   //坐标轴刻度的分割段数
+                    // interval: 500  //手动设定刻度的间隔
                 },
                 yAxis: {
                     name: 'Price',
@@ -71,35 +77,35 @@
                     splitLine: {
                         show: true
                     },
-                    scale:true
+                    scale:true,
+                    splitNumber: 10
                 },
             dataZoom: [
                     {
                         type: 'slider',  // 这个 dataZoom 组件是 slider 型 dataZoom 组件
                         show: true,
                         xAxisIndex: [0],
-                        start: 10,   // 左边在 10% 的位置。
-                        end: 60     // 右边在 60% 的位置。
+                        start: 0,   // 左边在 0% 的位置。
+                        end: 20    // 右边在 20% 的位置。
                     },
                     {
                         type: 'slider',
                         show: true,
                         yAxisIndex: [0],
-                        left: '93%',
-                        start: 10,
-                        end: 60
+                        start: 0,
+                        end: 30
                     },
                     {
                         type: 'inside',
                         xAxisIndex: [0],
-                        start: 10,
-                        end: 60
+                        start: 0,
+                        end: 20
                     },
                     {
                         type: 'inside',
                         yAxisIndex: [0],
-                        start: 10,
-                        end: 60
+                        start: 0,
+                        end: 30
                     }
                 ],
                 series: [
@@ -142,6 +148,7 @@
         };
 
         // 使用刚指定的配置项和数据显示图表。
+        myChart.hideLoading();
         myChart.setOption(option);
     </script>
 </body>
