@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2017/8/17 15:20
+# @Author  : shihan.ran
+# @Site    :
+# @File    : getdatalist.py
+# @Software: PyCharm
 
 '''
 该脚本包含了从数据读入 处理去空格 生成js文件及全局变量
