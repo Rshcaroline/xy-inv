@@ -2,41 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02aac1b3-bc76-4f8c-a397-f481877ffd6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patent/Patent_data.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/gameRole.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/mainGame.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/font/font.fnt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/font/font.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/image/background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/image/gameover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/image/shoot.pack" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/image/shoot.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/image/shoot_background.pack" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/image/shoot_background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/achievement.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/big_spaceship_flying.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/bullet.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/bullet.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/button.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/enemy1_down.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/enemy1_down.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/enemy2_down.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/enemy2_down.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/enemy3_down.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/enemy3_down.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/game_music.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/game_music.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/game_over.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/game_over.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/get_bomb.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/get_double_laser.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/out_porp.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Learning/PythonShootGame/resources/sound/use_bomb.mp3" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patent/ftplib.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Visualization/data.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Visualization/data_ap_list.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Visualization/data_bp_list.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Visualization/getdatalist.py" afterPath="$PROJECT_DIR$/Visualization/getdatalist.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Patent/Patent_data.py" afterPath="$PROJECT_DIR$/Patent/Patent_data.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +18,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/xy_inv$utf_to_gbk.coverage" NAME="utf_to_gbk Coverage Results" MODIFIED="1501575897069" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
-    <SUITE FILE_PATH="coverage/xy_inv$getdatalist.coverage" NAME="getdatalist Coverage Results" MODIFIED="1503036317749" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
+    <SUITE FILE_PATH="coverage/xy_inv$getdatalist.coverage" NAME="getdatalist Coverage Results" MODIFIED="1503284723640" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$main.coverage" NAME="main Coverage Results" MODIFIED="1501737078352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/patent" />
     <SUITE FILE_PATH="coverage/xy_inv$filter.coverage" NAME="filter Coverage Results" MODIFIED="1502863604163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1501206817330" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
@@ -56,6 +27,7 @@
     <SUITE FILE_PATH="coverage/xy_inv$getdata.coverage" NAME="getdata Coverage Results" MODIFIED="1502959283238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$getdatadict.coverage" NAME="getdatadict Coverage Results" MODIFIED="1502963049924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$filterspace.coverage" NAME="filterspace Coverage Results" MODIFIED="1503025141618" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
+    <SUITE FILE_PATH="coverage/xy_inv$Patent_data.coverage" NAME="Patent_data Coverage Results" MODIFIED="1503290051309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$levenshtein.coverage" NAME="levenshtein Coverage Results" MODIFIED="1501226651894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Patent" />
     <SUITE FILE_PATH="coverage/xy_inv$graph.coverage" NAME="graph Coverage Results" MODIFIED="1502934361837" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Visualization" />
     <SUITE FILE_PATH="coverage/xy_inv$aircraft.coverage" NAME="aircraft Coverage Results" MODIFIED="1502270941314" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Learning" />
@@ -81,31 +53,11 @@
       <file leaf-file-name="getdatalist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Visualization/getdatalist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
+            <state relative-caret-position="-571">
               <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding>
                 <element signature="e#203#213#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="snack.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Learning/snack.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Patent_data.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Patent/Patent_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -120,13 +72,75 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="data_ap_list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/data_ap_list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="698" lean-forward="true" selection-start-line="0" selection-start-column="698" selection-end-line="0" selection-end-column="698" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="echarts_scatter.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Visualization/echarts_scatter.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1173">
+            <state relative-caret-position="-809">
               <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data_bp_list.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/data_bp_list.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filterspace.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/filterspace.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="in.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Visualization/in.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="257">
+              <caret line="4689" column="23" lean-forward="true" selection-start-line="4689" selection-start-column="23" selection-end-line="4689" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Patent_data.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Patent/Patent_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ftplib.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Patent/ftplib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2013">
+              <caret line="995" column="10" lean-forward="false" selection-start-line="995" selection-start-column="10" selection-end-line="995" selection-end-column="10" />
+              <folding>
+                <element signature="e#1528#1538#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -184,7 +198,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Patent/0630_12.txt" />
         <option value="$PROJECT_DIR$/Patent/20170704-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/20170707-INDEX-001.TXT" />
         <option value="$PROJECT_DIR$/Patent/0711_12.txt" />
@@ -234,6 +247,7 @@
         <option value="$PROJECT_DIR$/Visualization/echarts_scatter.html" />
         <option value="$PROJECT_DIR$/Patent/all.py" />
         <option value="$PROJECT_DIR$/Visualization/getdatalist.py" />
+        <option value="$PROJECT_DIR$/Patent/ftplib.py" />
         <option value="$PROJECT_DIR$/Patent/Patent_data.py" />
       </list>
     </option>
@@ -348,7 +362,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.snack">
+  <component name="RunManager" selected="Python.Patent_data">
     <configuration default="false" name="getdatalist" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -363,25 +377,6 @@
       <module name="xy-inv" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Visualization/getdatalist.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="getdatadict" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Visualization" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="xy-inv" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\shihan.ran\Desktop\xy-inv\Visualization\datatest\getdatadict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -439,6 +434,25 @@
       <module name="xy-inv" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Learning/snack.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Patent_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Patent" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="xy-inv" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patent/Patent_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -594,18 +608,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.getdatalist" />
-      <item index="1" class="java.lang.String" itemvalue="Python.getdatadict" />
-      <item index="2" class="java.lang.String" itemvalue="Python.originalgraph" />
-      <item index="3" class="java.lang.String" itemvalue="Python.filterspace" />
-      <item index="4" class="java.lang.String" itemvalue="Python.snack" />
+      <item index="1" class="java.lang.String" itemvalue="Python.originalgraph" />
+      <item index="2" class="java.lang.String" itemvalue="Python.filterspace" />
+      <item index="3" class="java.lang.String" itemvalue="Python.snack" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Patent_data" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.snack" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Patent_data" />
         <item index="1" class="java.lang.String" itemvalue="Python.getdatalist" />
-        <item index="2" class="java.lang.String" itemvalue="Python.filterspace" />
-        <item index="3" class="java.lang.String" itemvalue="Python.originalgraph" />
-        <item index="4" class="java.lang.String" itemvalue="Python.getdatadict" />
+        <item index="2" class="java.lang.String" itemvalue="Python.snack" />
+        <item index="3" class="java.lang.String" itemvalue="Python.filterspace" />
+        <item index="4" class="java.lang.String" itemvalue="Python.originalgraph" />
       </list>
     </recent_temporary>
   </component>
@@ -635,7 +649,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26012793" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -643,9 +656,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.4978678" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32083791" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26868907" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.45178765" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30552545" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32286024" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39761648" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -675,8 +688,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shfe_dmkt_20170605_wr.log" />
-    <entry file="file://$PROJECT_DIR$/shfe_dmkt_20170605_ag.log" />
     <entry file="file://$PROJECT_DIR$/Learning/eatingwhere.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -850,13 +861,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Visualization/shfe_dmkt_20170605_ag.log" />
-    <entry file="file://$PROJECT_DIR$/Visualization/data_bp_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Visualization/datatest/data_bp_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -868,45 +872,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/data_ap_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="0" column="698" lean-forward="true" selection-start-line="0" selection-start-column="698" selection-end-line="0" selection-end-column="698" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/filterspace.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/in.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="4689" column="23" lean-forward="true" selection-start-line="4689" selection-start-column="23" selection-end-line="4689" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/data.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="140" lean-forward="false" selection-start-line="4" selection-start-column="131" selection-end-line="4" selection-end-column="140" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Visualization/echarts_scatter.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -933,9 +898,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/levenshtein.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/filterspace.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" lean-forward="false" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/in.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="4689" column="23" lean-forward="true" selection-start-line="4689" selection-start-column="23" selection-end-line="4689" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="140" lean-forward="false" selection-start-line="4" selection-start-column="131" selection-end-line="4" selection-end-column="140" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/data_ap_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="698" lean-forward="true" selection-start-line="0" selection-start-column="698" selection-end-line="0" selection-end-column="698" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/data_bp_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Visualization/getdatalist.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
+        <state relative-caret-position="-571">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
             <element signature="e#203#213#0" expanded="true" />
@@ -943,10 +956,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Visualization/echarts_scatter.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-809">
+          <caret line="69" column="47" lean-forward="false" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/ftplib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2013">
+          <caret line="995" column="10" lean-forward="false" selection-start-line="995" selection-start-column="10" selection-end-line="995" selection-end-column="10" />
+          <folding>
+            <element signature="e#1528#1538#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Patent/Patent_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        <state relative-caret-position="318">
+          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
           <folding />
         </state>
       </provider>
