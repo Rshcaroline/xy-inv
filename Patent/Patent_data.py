@@ -11,6 +11,7 @@
 import os
 import time
 import ftplib
+import zipfile
 import csv
 import xml.dom.minidom
 
@@ -184,7 +185,7 @@ if __name__ == "__main__":
             writer = csv.writer(outfile)
 
             for line in cv:
-                line = dnpath + file + '-' + line[1] + '-001.ZIP' + line
+                line = dnpath + '\\' + file + '-' + line[1] + '-001.ZIP' + line
                 print(line)
 
                 line = line.replace(u'\\', '/')
