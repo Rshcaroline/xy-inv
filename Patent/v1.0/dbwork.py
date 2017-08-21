@@ -1,6 +1,8 @@
 from sqlalchemy import create_engine
 import pandas as pd
 
+# 连接数据库并做“查询”
+
 sqlserver_url = "mssql+pymssql://shihan.ran:Caroline970505@192.168.66.12:1433"
 engine = create_engine(sqlserver_url)
 

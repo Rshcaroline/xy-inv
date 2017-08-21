@@ -3,10 +3,7 @@
 import xml.dom.minidom
 import csv
 import sys
-import levenshtein as lv
 
-
-reload(sys)
 sys.setdefaultencoding('utf-8')
 
 def get_each_invent(f):
@@ -31,17 +28,17 @@ def get_each_invent(f):
     # agency = root.getElementsByTagName('base:OrganizationName')[0].firstChild.datatest
     # detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.datatest
 
-    print u'申请号：', shenqinghao
-    print u'申请日：', shenqingri
-    print u'公开号：', gongkaihao
-    print u'公开日：', gongkairi
-    print u'IPC分类号：', IPCfenleihao
-    print u'申请人：', name
-    print u'发明人：', inventor
-    print u'专利产品：',title
+    print(u'申请号：', shenqinghao)
+    print(u'申请日：', shenqingri)
+    print(u'公开号：', gongkaihao)
+    print(u'公开日：', gongkairi)
+    print(u'IPC分类号：', IPCfenleihao)
+    print(u'申请人：', name)
+    print(u'发明人：', inventor)
+    print(u'专利产品：',title)
     # print u'代理人：', agency
-    print u'申请人地址：', place
-    print u'申请人邮编：', post
+    print(u'申请人地址：', place)
+    print(u'申请人邮编：', post)
     return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, place, post]
 
 
@@ -65,7 +62,7 @@ if __name__ == '__main__':
                 result = get_each_invent(line)
                 write(result)
             except IOError:
-                print 'cant open'
+                print('cant open')
         f.close()
-    print 'done'
+    print('done')
 
