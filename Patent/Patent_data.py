@@ -15,6 +15,11 @@ import zipfile
 import csv
 import xml.dom.minidom
 
+import io
+import sys
+
+sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8') #改变标准输出的默认编码
+
 class myFtp:
     ftp = ftplib.FTP()
     bIsDir = False
@@ -99,6 +104,9 @@ class myFtp:
     def cwd(self,path):
         self.ftp.cwd(path)
 
+    def nlst(self):
+        self.ftp.nlst()
+
     def close(self):
         self.ftp.quit()
 
@@ -124,6 +132,7 @@ def get_each_invent(f):
     # agency = root.getElementsByTagName('base:OrganizationName')[0].firstChild.datatest
     # detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.datatest
 
+    '''
     print(u'申请号：', shenqinghao)
     print(u'申请日：', shenqingri)
     print(u'公开号：', gongkaihao)
@@ -135,7 +144,8 @@ def get_each_invent(f):
     # print u'代理人：', agency
     print(u'申请人地址：', place)
     print(u'申请人邮编：', post)
-    return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, place, post]
+    '''
+    return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, str(name), str(inventor), str(title), str(place), str(post)]
 
 if __name__ == "__main__":
     update = '20170814'
@@ -170,22 +180,46 @@ if __name__ == "__main__":
 
     print('需要更新的文件为：', download)
 
-    st = time.clock()
     for file in download:
-        # ftp.DownLoadFileTree(dnpath, file)  # file 现在是日期
+        dntopath = dnpath + '\\' + file
+        dntopath = dntopath.replace('\\','/')
 
-        wt = enterls[0:13] + file + '.csv'  # 输出文件名
+        # ftp.DownLoadFileTree(dntopath, file)  # file 现在是日期
+
+        wt = enterls[0:13] + file + '.csv'  # 保存输出的文件名
         print(wt)
-        rd = dnpath + '\\' + file + '-INDEX-001.txt' # 读入的txt索引
+        rd = dntopath + '\\' + file + '-INDEX-001.txt' # 读入的txt索引
         rd = rd.replace(u'\\', '/')  # 去掉\\对于路径的干扰
         print(rd)
 
-        with open(rd) as infile, open(wt, 'ab') as outfile:
-            cv = infile.readlines()
+        '''
+        ftp.cwd(file)  # 进入下载目录
+        tobedned = []
+        ftp.retrlines('LIST', callback=tobedned.append)
+        print("正在进行解压缩...")
+        for things in tobedned:
+            things = things[55:]
+            if things[-3:] == 'ZIP':  # 如果是压缩包
+                print("正在解压：", things)
+                zippath = dntopath + '\\' + things
+                topath = dntopath + '\\' + things[:-4] # 去掉后缀.ZIP
+                with zipfile.ZipFile(zippath) as myzip:
+                    myzip.extractall(topath)
+        ftp.cwd("..")
+        '''
+
+        with open(rd,'rb') as infile, open(wt,'w') as outfile:
+            # cv = infile.readlines()
+            cv = [x.decode('utf8').strip() for x in infile.readlines()]
             writer = csv.writer(outfile)
 
+            print("开始处理XML文件...")
+
             for line in cv:
-                line = dnpath + '\\' + file + '-' + line[1] + '-001.ZIP' + line
+                topath = dntopath + '\\' + file + '-' + line[1] + '-001'
+                topath = topath.replace(u'\\', '/')
+
+                line = topath + line
                 print(line)
 
                 line = line.replace(u'\\', '/')
@@ -197,9 +231,9 @@ if __name__ == "__main__":
                     writer.writerow(result)
                 except IOError:
                     print('cant open')
-
             infile.close()
             outfile.close()
+
     ftp.close()
 
     print("Done!")
