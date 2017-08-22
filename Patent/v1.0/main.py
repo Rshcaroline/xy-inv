@@ -3,7 +3,7 @@
 import xml.dom.minidom
 import csv
 import sys
-
+reload(sys)
 sys.setdefaultencoding('utf-8')
 
 def get_each_invent(f):

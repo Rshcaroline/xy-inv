@@ -14,10 +14,6 @@ import ftplib
 import zipfile
 import csv
 import xml.dom.minidom
-import sys
-
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 class myFtp:
     ftp = ftplib.FTP()
@@ -32,10 +28,10 @@ class myFtp:
 
     def Login(self, user, passwd):
         self.ftp.login(user, passwd)
-        print self.ftp.welcome
+        print(self.ftp.welcome)
 
     def DownLoadFile(self, LocalFile, RemoteFile):
-        print '正在下载的文件为：',RemoteFile
+        print('正在下载的文件为：',RemoteFile)
         file_handler = open(LocalFile, 'wb')
         self.ftp.retrbinary("RETR %s" % (RemoteFile), file_handler.write)
         file_handler.close()
@@ -52,10 +48,10 @@ class myFtp:
     def UpLoadFileTree(self, LocalDir, RemoteDir):
         if os.path.isdir(LocalDir) == False:
             return False
-        print "本地上传地址为：", LocalDir
+        print("本地上传地址为：", LocalDir)
         LocalNames = os.listdir(LocalDir)
-        print "上传文件名为:", LocalNames
-        print RemoteDir
+        print("上传文件名为:", LocalNames)
+        print(RemoteDir)
         self.ftp.cwd(RemoteDir)
         for Local in LocalNames:
             src = os.path.join(LocalDir, Local)
@@ -67,12 +63,12 @@ class myFtp:
         return
 
     def DownLoadFileTree(self, LocalDir, RemoteDir):
-        print "正在下载的目录为:", RemoteDir
+        print("正在下载的目录为:", RemoteDir)
         if os.path.isdir(LocalDir) == False:  # 如果本地没有目录
             os.makedirs(LocalDir)  # 新建一个目录保存下载文件
         self.ftp.cwd(RemoteDir)   # 进入下载目录
         RemoteNames = self.ftp.nlst()  # 将目录下的所有文件名存入
-        print "需要下载的文件为：", RemoteNames
+        print("需要下载的文件为：", RemoteNames)
         for file in RemoteNames:
             Local = os.path.join(LocalDir, file)   # 将本地路径和文件名合成一个绝对路径
             if self.isDir(file):     # 如果仍为一个目录 则用深度优先遍历
@@ -109,7 +105,6 @@ class myFtp:
     def close(self):
         self.ftp.quit()
 
-
 def get_each_invent(f):
     dom = xml.dom.minidom.parse(f)
     root = dom.documentElement
@@ -133,31 +128,22 @@ def get_each_invent(f):
     # detail = root.getElementsByTagName('base:Paragraphs')[0].firstChild.datatest
 
     '''
-    print u'申请号：', shenqinghao
-    print u'申请日：', shenqingri
-    print u'公开号：', gongkaihao
-    print u'公开日：', gongkairi
-    print u'IPC分类号：', IPCfenleihao
-    print u'申请人：', name
-    print u'发明人：', inventor
-    print u'专利产品：',title
+    print(u'申请号：', shenqinghao)
+    print(u'申请日：', shenqingri)
+    print(u'公开号：', gongkaihao)
+    print(u'公开日：', gongkairi)
+    print(u'IPC分类号：', IPCfenleihao)
+    print(u'申请人：', name)
+    print(u'发明人：', inventor)
+    print(u'专利产品：',title)
     # print u'代理人：', agency
-    print u'申请人地址：', place
-    print u'申请人邮编：', post
+    print(u'申请人地址：', place)
+    print(u'申请人邮编：', post)
     '''
     return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, place, post]
 
-
-def write(r, tocsv):
-    outfile = open(tocsv, 'ab')
-    writer = csv.writer(outfile)
-    writer.writerow(r)
-    outfile.close()
-    return 0
-
 if __name__ == "__main__":
-    # update = '20170810'
-    update = time.strftime('%Y%m%d', time.localtime(time.time()))
+    update = '20170814'
     dnpath = 'C:\\Users\\shihan.ran\\Downloads'  # \\Downloads
 
     ftp = myFtp('patdata1ftp.sipo.gov.cn')
@@ -169,11 +155,10 @@ if __name__ == "__main__":
     for entry in fls:
         itfls.append(entry[55:])   # 因为前缀 len('drwxrwxrwx   1 user     group           0 Mar 17 14:45 ') = 55
 
-    # print '第一层目录下：',itfls
+    print('第一层目录下：',itfls)
 
     enterls = itfls[5]
-    ftp.cwd(enterls)
-    print '进入目录 CN-BIBS-ABSS-10-A_中国发明专利申请公布标准化著录项目数据'
+    ftp.cwd(enterls)  # 进入目录 'CN-BIBS-ABSS-10-A_中国发明专利申请公布标准化著录项目数据'
 
     sls = []  # second ls
     itsls = []  # initial second ls 去掉前缀
@@ -181,66 +166,74 @@ if __name__ == "__main__":
     for entry in sls:
         itsls.append(entry[55:])
 
-    print '第二层目录下：',itsls
+    print('第二层目录下：',itsls)
 
     download = []
     for i in range(len(itsls)-2):
         if update <= itsls[i+2]:
             download.append(itsls[i+2])
 
-    print '需要更新的文件为：', download
+    print('需要更新的文件为：', download)
 
     for file in download:
         dntopath = dnpath + '\\' + file
         dntopath = dntopath.replace('\\','/')
 
-        ftp.DownLoadFileTree(dntopath, file)  # file 现在是日期
+        # ftp.DownLoadFileTree(dntopath, file)  # file 现在是日期
 
         wt = enterls[0:13] + file + '.csv'  # 保存输出的文件名
-        # print wt
+        print(wt)
         rd = dntopath + '\\' + file + '-INDEX-001.txt' # 读入的txt索引
         rd = rd.replace(u'\\', '/')  # 去掉\\对于路径的干扰
-        # print rd
+        print(rd)
 
+        '''
         ftp.cwd(file)  # 进入下载目录
         tobedned = []
         ftp.retrlines('LIST', callback=tobedned.append)
-        print "正在进行解压缩..."
+        print("正在进行解压缩...")
         for things in tobedned:
             things = things[55:]
             if things[-3:] == 'ZIP':  # 如果是压缩包
-                print "正在解压：", things
+                print("正在解压：", things)
                 zippath = dntopath + '\\' + things
                 topath = dntopath + '\\' + things[:-4] # 去掉后缀.ZIP
                 with zipfile.ZipFile(zippath) as myzip:
                     myzip.extractall(topath)
         ftp.cwd("..")
+        '''
 
-        with open(rd,'rb') as infile:
+        with open(rd,'rb') as infile, open(wt,'w') as outfile:
             # cv = infile.readlines()
-            cv = [x.decode('utf8').strip() for x in infile.readlines()]  # 修改编码格式
-            # writer = csv.writer(outfile)
+            cv = [x.decode('utf8').strip() for x in infile.readlines()]
+            writer = csv.writer(outfile)
 
-            print "正在处理XML文件..."
+            print("开始处理XML文件...")
 
             for line in cv:
                 topath = dntopath + '\\' + file + '-' + line[1] + '-001'
+                topath = topath.replace(u'\\', '/')
 
                 line = topath + line
+                print(line)
+
                 line = line.replace(u'\\', '/')
                 line = line.replace(u'\n', '')
+                print(line)
 
                 try:
                     result = get_each_invent(line)
-                    # writer.writerow(result)
-                    write(result, wt)
+                    writer.writerow(result)
                 except IOError:
-                    print line, '打不开！'
-                    print '继续处理XML文件...'
+                    print('cant open')
+            infile.close()
+            outfile.close()
+
     ftp.close()
 
-    print "此次的专利数据已经更新完成!"
-    print '请更新脚本中的update为：', time.strftime('%Y%m%d',time.localtime(time.time()))
+    print("Done!")
+    print('请更新脚本中的update为：', time.strftime('%Y%m%d',time.localtime(time.time())))
+
 
 
 
