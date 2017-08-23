@@ -36,12 +36,21 @@ def Levenshtein(first, second):  # 编辑距离算法 计算字符串的相似�
     # print distance_matrix
     return distance_matrix[first_length - 1][second_length - 1]
 
+def write(line):
+    outfile = open('Match.csv','ab')
+    writer = csv.writer(outfile)
+    writer.writerow(line)
+    outfile.close()
+    return 0
 
 if __name__ == '__main__':
+    count = 1
+
     readap = csv.reader(open('Applicant.csv', 'rb'))
     for shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, applicant, inventor, title, place, post in readap:
-        count = 1
-        threshold = len(applicant) * 0.5  # 设置一个比较的阈值
+        print '已执行 %d 行' % count
+
+        threshold = (len(applicant)/3) * 0.5  # 设置一个比较的阈值 每个中文的编码字符长度为3
         readcp = csv.reader(open('Company.csv', 'rb'))
         for InnerCode, SecuCode, ChiName, ChiNameAbbr in readcp:
             possible = 0
@@ -57,15 +66,15 @@ if __name__ == '__main__':
                 # print "There are %d parts:\n" % len(res)
                 # for r in res:
                     # print r
-                print ChiNameAbbr, applicant
+                print count, InnerCode, SecuCode, ChiNameAbbr, applicant
+                write([count, InnerCode, SecuCode, ChiNameAbbr, applicant])
             '''
             else:
                 print applicant, '和', ChiNameAbbr, '不匹配'
                 continue
             '''
-
             if possible:
-                print applicant, ChiName
+                print count, InnerCode, SecuCode, ChiName, applicant
+                write([count, InnerCode, SecuCode, ChiName, applicant])
 
-        count += 1
-        print count
+        count = count + 1
