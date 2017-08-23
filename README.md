@@ -5,6 +5,9 @@ an internship in XY investment company
 ## Patent 
 #### 环境：
 Python 2.7
+
+一定要注意环境，因为3.6的编码默认成了unicode，如果不用2.7统一处理会报错。
+
 #### 主要思路为：
 用公司申请的账号密码去专利网下载数据，按照专利文件夹的索引生成自己的索引，再处理XML文件。
 #### 成果：
