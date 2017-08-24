@@ -8,13 +8,14 @@
 # zipfile
 # Ftplib
 
+import csv
 import os
+import sys
 import time
+import xml.dom.minidom
+
 import ftplib
 import zipfile
-import csv
-import xml.dom.minidom
-import sys
 
 reload(sys)
 sys.setdefaultencoding('utf-8')
