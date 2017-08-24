@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02aac1b3-bc76-4f8c-a397-f481877ffd6a" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/xy-inv.iml" afterPath="$PROJECT_DIR$/.idea/xy-inv.iml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -50,75 +52,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Patent_data.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/Patent_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2652">
-              <caret line="162" column="40" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
-              <folding>
-                <element signature="e#160#169#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Match_company.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/Match_company.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-              <folding>
-                <element signature="e#142#151#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="29" selection-end-line="21" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CN-BIBS-ABSS-10-A_20170510.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v1.0/CN-BIBS-ABSS-10-A/done/CN-BIBS-ABSS-10-A_20170510.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Company.csv" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Patent/Company.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="134" column="28" lean-forward="true" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Applicant.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/Applicant.csv">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CN-BIBS-ABSS-10-A_20170322.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v1.0/CN-BIBS-ABSS-10-A/done/CN-BIBS-ABSS-10-A_20170322.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="76" lean-forward="false" selection-start-line="7" selection-start-column="59" selection-end-line="8" selection-end-column="76" />
               <folding />
             </state>
           </provider>
@@ -291,18 +229,18 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\v1.0" />
-      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\3.6" />
-      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Visualization\datatest" />
-      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Visualization" />
-      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent" />
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Visualization" />
       <recent name="$PROJECT_DIR$/Patent" />
       <recent name="C:\Users\shihan.ran\Desktop\xy-inv\patent" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\Python 2.7 v2.0" />
+      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\v1.0" />
+      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Patent\3.6" />
+      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Visualization\datatest" />
+      <recent name="C:\Users\shihan.ran\Desktop\xy-inv\Visualization" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,7 +269,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xy-inv" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patent/Patent_data.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\shihan.ran\Desktop\xy-inv\Patent\Python 2.7 v2.0\Patent_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -386,7 +324,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="xy-inv" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Patent/Match_company.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\shihan.ran\Desktop\xy-inv\Patent\Python 2.7 v2.0\Match_company.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -632,9 +570,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26812366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26812366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33261105" sideWeight="0.50852877" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -642,7 +579,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3206934" sideWeight="0.49791667" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47562298" sideWeight="0.4914712" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37053087" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58504874" sideWeight="0.49583334" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41603467" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942432" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -672,13 +609,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Visualization/datatest/getdatadict.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-323">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Visualization/datatest/data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -790,6 +720,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="16881">
           <caret line="995" column="10" lean-forward="false" selection-start-line="995" selection-start-column="10" selection-end-line="995" selection-end-column="10" />
+          <folding>
+            <element signature="e#1528#1538#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -818,6 +751,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34578">
           <caret line="2043" column="10" lean-forward="false" selection-start-line="2043" selection-start-column="10" selection-end-line="2043" selection-end-column="10" />
+          <folding>
+            <element signature="e#225#234#0" expanded="false" />
+            <marker date="1503305630992" expanded="true" signature="34682:65388" ph="..." />
+            <marker date="1503305630992" expanded="true" signature="43433:43802" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -844,17 +782,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-20170815.csv" />
-    <entry file="file://$PROJECT_DIR$/Patent/ftplib.py">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/ftplib.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="e#1392#1401#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/zipfile.py">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/zipfile.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26180">
           <caret line="1540" column="10" lean-forward="false" selection-start-line="1540" selection-start-column="10" selection-end-line="1540" selection-end-column="10" />
+          <folding>
+            <element signature="e#34#70#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -880,7 +824,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Patent/test.ipynb" />
     <entry file="file://$PROJECT_DIR$/Patent/test.py" />
-    <entry file="file://$PROJECT_DIR$/Patent/Company.csv">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/Company.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="29" lean-forward="true" selection-start-line="5" selection-start-column="29" selection-end-line="5" selection-end-column="29" />
@@ -889,7 +833,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Patent/CN-BIBS-ABSS-20170811.csv" />
-    <entry file="file://$PROJECT_DIR$/Patent/Applicant.csv">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/Applicant.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -901,23 +845,19 @@
     <entry file="file://$PROJECT_DIR$/Patent/test.js" />
     <entry file="file://$PROJECT_DIR$/Patent/ziptest.py" />
     <entry file="file://$PROJECT_DIR$/Patent/match.csv" />
-    <entry file="file://$PROJECT_DIR$/Patent/Match_company.py">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/Company.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="e#142#151#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-119">
+          <caret line="134" column="28" lean-forward="true" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/Patent_data.py">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v1.0/CN-BIBS-ABSS-10-A/done/CN-BIBS-ABSS-10-A_20170510.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2652">
-          <caret line="162" column="40" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
-          <folding>
-            <element signature="e#160#169#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -929,18 +869,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v1.0/CN-BIBS-ABSS-10-A/done/CN-BIBS-ABSS-10-A_20170510.csv">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/Match_company.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="30" lean-forward="false" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+        <state relative-caret-position="102">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#142#151#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/Patent_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="162" column="40" lean-forward="false" selection-start-line="162" selection-start-column="40" selection-end-line="162" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Patent/Company.csv">
+    <entry file="file://$PROJECT_DIR$/Patent/Python 2.7 v2.0/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="134" column="28" lean-forward="true" selection-start-line="134" selection-start-column="28" selection-end-line="134" selection-end-column="28" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
