@@ -111,7 +111,7 @@ class myFtp:
         self.ftp.quit()
 
 
-def get_each_invent(f):
+def get_each_invent(f, date):
     dom = xml.dom.minidom.parse(f)
     root = dom.documentElement
 
@@ -146,7 +146,7 @@ def get_each_invent(f):
     print u'申请人地址：', place
     print u'申请人邮编：', post
     '''
-    return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, place, post]
+    return [shenqinghao, shenqingri, gongkaihao, gongkairi, IPCfenleihao, name, inventor, title, place, post, date]
 
 
 def write(r, tocsv):
@@ -203,6 +203,7 @@ if __name__ == "__main__":
         rd = rd.replace(u'\\', '/')  # 去掉\\对于路径的干扰
         # print rd
 
+
         ftp.cwd(file)  # 进入下载目录
         tobedned = []
         ftp.retrlines('LIST', callback=tobedned.append)
@@ -217,6 +218,7 @@ if __name__ == "__main__":
                     myzip.extractall(topath)
         ftp.cwd("..")
 
+
         with open(rd,'rb') as infile:
             # cv = infile.readlines()
             cv = [x.decode('utf8').strip() for x in infile.readlines()]  # 修改编码格式
@@ -224,6 +226,7 @@ if __name__ == "__main__":
 
             print "正在处理XML文件..."
 
+            write(['申请号', '申请日', '公开（公告）号', '公开（公告）日', '分类号', '申请（专利权）人', '发明（设计）人', '名称', '地址', '邮编', '更新日期'], wt)
             for line in cv:
                 topath = dntopath + '\\' + file + '-' + line[1] + '-001'
 
@@ -232,7 +235,8 @@ if __name__ == "__main__":
                 line = line.replace(u'\n', '')
 
                 try:
-                    result = get_each_invent(line)
+                    date = time.strftime('%Y%m%d', time.localtime(time.time()))
+                    result = get_each_invent(line, date)
                     # writer.writerow(result)
                     write(result, wt)
                 except IOError:
