@@ -157,7 +157,7 @@ def write(r, tocsv):
     return 0
 
 if __name__ == "__main__":
-    update = '20170810'
+    update = '20170820'
     # update = time.strftime('%Y%m%d', time.localtime(time.time()))
     dnpath = 'C:\\Users\\shihan.ran\\Downloads'  # \\Downloads
 
