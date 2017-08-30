@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE business:PatentDocumentAndRelated SYSTEM "/DTDS/ExternalStandards/ipphdb-entities.dtd"[]>
+<business:PatentDocumentAndRelated xmlns:base="http://www.sipo.gov.cn/XMLSchema/base" xmlns:business="http://www.sipo.gov.cn/XMLSchema/business" xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:tbl="http://oasis-open.org/specs/soextblx" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sipo.gov.cn/XMLSchema/business /DTDS/PatentDocument/Elements/OtherElements.xsd" xsdVersion="V2.2.1" file="CN102016000058726CN00001070873410ABIAZH20170822CN00L.XML" dateProduced="20170821" status="C" lang="zh" country="CN" docNumber="107087341" kind="A" datePublication="20170822">
+  <business:BibliographicData>
+    <business:PublicationReference dataFormat="standard" sequence="1">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>107087341</base:DocNumber>
+        <base:Kind>A</base:Kind>
+        <base:Date>20170822</base:Date>
+      </base:DocumentID>
+    </business:PublicationReference>
+    <business:PublicationReference dataFormat="original" sourceDB="national office" sequence="1">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>107087341</base:DocNumber>
+        <base:Kind>A</base:Kind>
+        <base:Date>20170822</base:Date>
+      </base:DocumentID>
+    </business:PublicationReference>
+    <business:PublicAvailabilityDate>
+      <business:GazetteReference>
+        <business:GazetteNumber>33-3401</business:GazetteNumber>
+        <base:Date>20170822</base:Date>
+      </business:GazetteReference>
+    </business:PublicAvailabilityDate>
+    <business:ApplicationReference applType="10" dataFormat="standard" sequence="1">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>102016000058726</base:DocNumber>
+        <base:Date>20160128</base:Date>
+      </base:DocumentID>
+    </business:ApplicationReference>
+    <business:ApplicationReference applType="10" dataFormat="original" sequence="1" sourceDB="national office">
+      <base:DocumentID>
+        <base:WIPOST3Code>CN</base:WIPOST3Code>
+        <base:DocNumber>201610058726.X</base:DocNumber>
+        <base:Date>20160128</base:Date>
+      </base:DocumentID>
+    </business:ApplicationReference>
+    <business:ClassificationIPCRDetails creator="03" processingType="original">
+      <business:ClassificationIPCR sequence="1">
+        <business:IPCVersionDate>20060101</business:IPCVersionDate>
+        <business:Section>H</business:Section>
+        <business:MainClass>05</business:MainClass>
+        <business:Subclass>K</business:Subclass>
+        <business:MainGroup>1</business:MainGroup>
+        <business:Subgroup>02</business:Subgroup>
+        <business:GeneratingOffice>
+          <base:WIPOST3Code>CN</base:WIPOST3Code>
+        </business:GeneratingOffice>
+        <business:ClassificationDataSource>H</business:ClassificationDataSource>
+        <base:Text>H05K    1/02    (2006.01)</base:Text>
+      </business:ClassificationIPCR>
+      <business:ClassificationIPCR sequence="2">
+        <business:IPCVersionDate>20060101</business:IPCVersionDate>
+        <business:Section>H</business:Section>
+        <business:MainClass>05</business:MainClass>
+        <business:Subclass>K</business:Subclass>
+        <business:MainGroup>3</business:MainGroup>
+        <business:Subgroup>06</business:Subgroup>
+        <business:GeneratingOffice>
+          <base:WIPOST3Code>CN</base:WIPOST3Code>
+        </business:GeneratingOffice>
+        <business:ClassificationDataSource>H</business:ClassificationDataSource>
+        <base:Text>H05K    3/06    (2006.01)</base:Text>
+      </business:ClassificationIPCR>
+    </business:ClassificationIPCRDetails>
+    <business:InventionTitle lang="zh" dataFormat="original" sourceDB="national office" processingType="original" creator="03">电路板及其制作方法</business:InventionTitle>
+    <business:Parties>
+      <business:ApplicantDetails representative="1">
+        <business:Applicant sequence="1" appType="applicant" dataFormat="original" sourceDB="national office" lang="zh" creator="03" processingType="original">
+          <base:AddressBook lang="zh">
+            <base:Name>鹏鼎控股(深圳)股份有限公司</base:Name>
+            <base:Address>
+              <base:AddressLine>0</base:AddressLine>
+              <base:AddressMailCode>0</base:AddressMailCode>
+              <base:PostBox>0</base:PostBox>
+              <base:AddressRoom>0</base:AddressRoom>
+              <base:AddressFloor>0</base:AddressFloor>
+              <base:AddressBuilding>0</base:AddressBuilding>
+              <base:Street>0</base:Street>
+              <base:AddressCity>0</base:AddressCity>
+              <base:County>宝安区</base:County>
+              <base:City>深圳市</base:City>
+              <base:Province>广东省</base:Province>
+              <base:PostCode>518105</base:PostCode>
+              <base:WIPOST3Code>CN</base:WIPOST3Code>
+              <base:Text>518105 广东省深圳市宝安区松岗街道燕川燕罗路</base:Text>
+            </base:Address>
+          </base:AddressBook>
+          <business:OrganizationCode createDate="00000000" creator="00">0000000000</business:OrganizationCode>
+        </business:Applicant>
+        <business:Applicant sequence="2" appType="applicant" dataFormat="original" sourceDB="national office" lang="zh" creator="03" processingType="original">
+          <base:AddressBook lang="zh">
+            <base:Name>宏启胜精密电子（秦皇岛）有限公司</base:Name>
+          </base:AddressBook>
+          <business:OrganizationCode createDate="00000000" creator="00">0000000000</business:OrganizationCode>
+        </business:Applicant>
+        <business:Applicant sequence="3" appType="applicant" dataFormat="original" sourceDB="national office" lang="zh" creator="03" processingType="original">
+          <base:AddressBook lang="zh">
+            <base:Name>鹏鼎科技股份有限公司</base:Name>
+          </base:AddressBook>
+          <business:OrganizationCode createDate="00000000" creator="00">0000000000</business:OrganizationCode>
+        </business:Applicant>
+      </business:ApplicantDetails>
+      <business:InventorDetails>
+        <business:Inventor sequence="1" dataFormat="original" sourceDB="national office" lang="zh" publicationMark="0" creator="03" processingType="original">
+          <base:AddressBook lang="zh">
+            <base:Name>李卫祥</base:Name>
+          </base:AddressBook>
+        </business:Inventor>
+      </business:InventorDetails>
+      <business:AgentDetails>
+        <business:CustomerNumber>44334</business:CustomerNumber>
+        <business:Agent sequence="1" lang="zh" dataFormat="original" sourceDB="national office" repType="agent" processingType="original" creator="03">
+          <business:Agency>
+            <base:AddressBook lang="zh">
+              <base:OrganizationName>深圳市赛恩倍吉知识产权代理有限公司 44334</base:OrganizationName>
+            </base:AddressBook>
+          </business:Agency>
+          <base:AddressBook lang="zh">
+            <base:Name>薛晓伟</base:Name>
+          </base:AddressBook>
+        </business:Agent>
+      </business:AgentDetails>
+    </business:Parties>
+  </business:BibliographicData>
+  <business:Abstract dataFormat="original" lang="zh" sourceDB="national office" processingType="original" creator="03">
+    <base:Paragraphs num="0001">本发明涉及一种电路板，包括内层结构、第一外层结构及电磁屏蔽材料。所述内层结构包括第一内层线路。所述第一内层线路包括电磁屏蔽连接垫。所述电磁屏蔽连接垫表面形成有镀铜层。该第一外层结构形成在所述第一内层线路及所述镀铜层表面。所述镀铜层完全覆盖所述电子屏蔽连接垫且部分内埋在所述第一外层结构中。自所述镀铜层背离所述电磁屏蔽连接垫的表面向所述镀铜层内部形成有U形槽。所述第一外层结构对应所述U形槽开设有一开口。所述电磁屏蔽材料充满所述U形槽及所述开口。本发明还涉及该电路板的制作方法。</base:Paragraphs>
+    <business:AbstractFigure>
+      <base:Figure num="0001">
+        <base:Image he="311.07" wi="661" file="201610058726.TIF" imgContent="undefined" imgFormat="TIFF" />
+      </base:Figure>
+    </business:AbstractFigure>
+  </business:Abstract>
+</business:PatentDocumentAndRelated>
